@@ -126,6 +126,7 @@ void output_joint(const int32_t bodyId, const astra_joint_t* joint, int i, char*
     else{
         printf("HELP");
     }
+    fflush(fp);
     fclose(fp);
     // orientation is a 3x3 rotation matrix where the column vectors also
     // represent the orthogonal basis vectors for the x, y, and z axes.
