@@ -1,24 +1,13 @@
 #!/usr/bin/env python3
 import glob
 import os
-from pathlib import Path
-from math import sqrt, acos
 import pickle
 
-# File pathes of finished fiels
-pathes = (Path("./rad_d1"), Path("./rad_d1.t"), Path('./cust_d1'), Path('./cust_d1.t'))
+from pathlib import Path
+from math import sqrt, acos
 
 # Loads data from data set 
 def loadData(folder, bin_dist=7, bin_angle=7):
-
-    # Test if the files have already been created
-    done = True
-    for x in pathes:
-        if not x.is_file():
-            done = False
-            break
-    if done:
-        return(0)
 
     # Prep file pathes for globs
     file_glob= folder + "/*.txt"
@@ -101,7 +90,7 @@ def processFolder(file_glob, bin_dist, bin_angle, out_file_ext=''):
 
         # Write to File
         with open(filename + out_file_ext, 'wb') as out:
-            pickle.dump([bin_dist_count,bin_angle_count], out)
+            pickle.dump([filename, bin_dist_count, bin_angle_count], out)
 
         
 
