@@ -36,7 +36,7 @@ read the README.txt in that folder
 
 Dependencies
 ============
-Python >= 3.7
-Scikit Learn
-Pandas
-Numpy
+- Python >= 3.7
+- Scikit Learn
+- Pandas
+- Numpy
