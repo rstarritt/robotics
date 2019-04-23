@@ -16,15 +16,15 @@ def main(argv):
         for x in os.listdir(argv[0]):
             print(x)
             if argv[0][-1] == "/":
-                loadData(argv[0] + x)
+                data = loadData(argv[0] + x)
             else:
-                loadData(argv[0] + '/' +x)
+                data = loadData(argv[0] + '/' +x)
+
     except FileNotFoundError:
         print("That is not a valid directory")
         exit(-1)
-    # print("Reading Data files")
-    data = []
 
+    print(data)
 
     # Train SVM
     print("Training SVM")

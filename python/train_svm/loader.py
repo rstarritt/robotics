@@ -13,14 +13,21 @@ def loadData(folder, bin_dist=7, bin_angle=7):
     file_glob= folder + "/*.txt"
 
     # Open train and test
-    processFolder(file_glob, bin_dist, bin_angle, '.obj')
+    return processFolder(file_glob, bin_dist, bin_angle, '.obj')
 
 def processFolder(file_glob, bin_dist, bin_angle, out_file_ext=''):
+
+    results = []
 
     # Open all files in directory
     for filename in glob.glob(file_glob):
         #print(filename)
         rads = []
+
+        if os.path.isfile(filename + ".obj"):
+            results.append(pickle.load(open(filename + ".obj", "rb")))
+            continue
+
         with open(filename) as f:
             frames = processFile(f)
             for x in frames:
@@ -91,8 +98,9 @@ def processFolder(file_glob, bin_dist, bin_angle, out_file_ext=''):
         # Write to File
         with open(filename + out_file_ext, 'wb') as out:
             pickle.dump([filename, bin_dist_count, bin_angle_count], out)
+            results.append([filename, bin_dist_count, bin_angle_count])
 
-        
+    return results
 
 # returns a list of frames
 def processFile(file):
