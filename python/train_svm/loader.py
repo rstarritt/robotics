@@ -227,3 +227,10 @@ class Rad:
         thetaR = (atan2(self.right_hand.joint_position_y - self.hip.joint_position_y, self.right_hand.joint_position_x - self.hip.joint_position_x) - 
             atan2(self.head.joint_position_y - self.hip.joint_position_y, self.head.joint_position_x - self.hip.joint_position_x))
         self.theta = (thetaL, thetaR)
+
+    def getPhi(self):
+        phiL = (atan2(self.left_hand[2][1] - self.hip[2][1], self.left_hand[2][0] - self.hip[2][0]) - 
+            atan2(self.head[2][1] - self.hip[2][1], self.head[2][0] - self.hip[2][0]))
+        thetaR = (atan2(self.right_hand[2][1] - self.hip[2][1], self.right_hand[2][0] - self.hip[2][0]) - 
+            atan2(self.head[2][1] - self.hip[2][1], self.head[2][0] - self.hip[2][0]))
+        self.theta = (thetaL, thetaR)
