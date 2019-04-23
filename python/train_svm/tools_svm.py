@@ -21,6 +21,8 @@ def train_svm(data):
     # Get dataframe
     data = convert_data(data)
 
+    # Train test split
+    
     # Fit SVM
     
     # return tested svm

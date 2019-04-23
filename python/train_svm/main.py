@@ -9,6 +9,7 @@ from loader import loadData
 from sklearn import svm
 
 def main(argv):
+    data = []
     if len(argv) != 1:
         print("Usage: python3 main.py folder_with_datasets")
         exit(-1)
@@ -16,15 +17,13 @@ def main(argv):
         for x in os.listdir(argv[0]):
             print(x)
             if argv[0][-1] == "/":
-                data = loadData(argv[0] + x)
+                data.append(loadData(argv[0] + x))
             else:
-                data = loadData(argv[0] + '/' +x)
+                data.append(loadData(argv[0] + '/' + x))
 
     except FileNotFoundError:
         print("That is not a valid directory")
         exit(-1)
-
-    print(data)
 
     # Train SVM
     print("Training SVM")
