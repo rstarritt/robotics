@@ -4,7 +4,7 @@ import os
 import pickle
 
 from pathlib import Path
-from math import sqrt, acos
+from math import sqrt, acos, atan2
 
 # Loads data from data set 
 def loadData(folder, bin_dist=7, bin_angle=7):
@@ -151,6 +151,9 @@ class Rad:
             self.right_hand,
             self.right_foot,
         )
+        # theta and phi are tuples with 2 elements, ordered left, right
+        self.theta = None # angle between arm and centerline of body
+        self.phi = None # angle between arm and back plane (how far forward arm is)
 
         # See: include/astra/capi/streams/body_types.h
         """
@@ -204,7 +207,9 @@ class Rad:
                 last_joint = self.left_hand
                 first = False
             joint[1] = self.getAngle(last_joint, joint, center)
-            last_joint = joint 
+            last_joint = joint
+
+        self.getTheta()
 
     def getDist(self, start, finish):
         return sqrt((start[0] - finish[0]) ** 2 + (start[1] - finish[1]) ** 2 + (start[2] - finish[2]) ** 2)
@@ -215,3 +220,10 @@ class Rad:
             dot += (finish[2][x] - center[2][x]) * (start[2][x]- center[2][x])
         # print (f"dot {dot}, {dot / (start[0] * finish[0])}")
         return acos(dot / (start[0] * finish[0]))
+
+    def getTheta(self):
+        thetaL = (atan2(self.left_hand.joint_position_y - self.hip.joint_position_y, self.left_hand.joint_position_x - self.hip.joint_position_x) - 
+            atan2(self.head.joint_position_y - self.hip.joint_position_y, self.head.joint_position_x - self.hip.joint_position_x))
+        thetaR = (atan2(self.right_hand.joint_position_y - self.hip.joint_position_y, self.right_hand.joint_position_x - self.hip.joint_position_x) - 
+            atan2(self.head.joint_position_y - self.hip.joint_position_y, self.head.joint_position_x - self.hip.joint_position_x))
+        self.theta = (thetaL, thetaR)
