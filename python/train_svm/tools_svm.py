@@ -4,7 +4,6 @@ import sklearn as sk
 
 from scipy.stats import norm
 from pandas import Series, DataFrame
-from matplotlib.colors import ListedColormap
 
 from sklearn import svm
 
