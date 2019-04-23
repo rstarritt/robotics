@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import sklearn as sk
 
 from scipy.stats import norm
@@ -22,7 +21,7 @@ def train_svm(data):
     data = convert_data(data)
 
     # Train test split
-    
+
     # Fit SVM
     
     # return tested svm
