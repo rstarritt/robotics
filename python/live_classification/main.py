@@ -1,11 +1,15 @@
 
 # This File uses the pickled svm to classify motions
 import pickle
+import sklearn as sk
+import pickle
+
+from sklearn import svm
+
 # This expects a stream of data from the astra software
 # through a pipe into stdin.
 
 def main():
-    pass
     # Load pickle (get trained SVM)
     svm = None
     try:

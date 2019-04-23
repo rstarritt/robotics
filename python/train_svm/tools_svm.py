@@ -21,6 +21,8 @@ def train_svm(data):
     # Get dataframe
     data = convert_data(data)
 
+    # Fit SVM
+    
     # return tested svm
     return svm.SVC(kernel='linear', C=10)
 
