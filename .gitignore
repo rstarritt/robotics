@@ -123,8 +123,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-=======
-# End of https://www.gitignore.io/api/code,linux,python
-CMakeCache.txt
->>>>>>> fa39934cde4c1f70d52dc4c7811bdac158b9dffe
+*.obj
+*.processed
