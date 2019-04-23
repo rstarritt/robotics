@@ -1,4 +1,5 @@
 
+#!/usr/bin/env python3
 # This File uses the pickled svm to classify motions
 import pickle
 import sklearn as sk

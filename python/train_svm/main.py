@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # Main entry point for the python code
 import sys
 import os
@@ -10,6 +11,7 @@ from sklearn import svm
 
 def main(argv):
     data = []
+
     if len(argv) != 1:
         print("Usage: python3 main.py folder_with_datasets")
         exit(-1)
@@ -35,6 +37,6 @@ def main(argv):
 
     print("SVM Stored")
 
-
+# allows for command line usage as exacutable
 if __name__ == "__main__":
     main(sys.argv[1:])
