@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import glob
+import os
 from pathlib import Path
 from math import sqrt, acos
 
@@ -14,35 +15,31 @@ def loadData(folder, bin_dist=7, bin_angle=7):
     for x in pathes:
         if not x.is_file():
             done = False
+            break
     if done:
         return(0)
 
     # Prep file pathes for globs
-    if folder[-1] is '/':
-        train = folder + 'train/*.txt'
-        test  = folder + 'test/*.txt'
-    else:
-        train = folder + '/train/*.txt'
-        test  = folder + '/test/*.txt'
-
+    file_glob= folder + "/*.txt"
+    print(file_glob)
     # Open train and test
-    processFolder(train, bin_dist, bin_angle, '.t')
-    processFolder(test, bin_dist, bin_angle)
+    processFolder(file_glob, bin_dist, bin_angle, '.processed')
 
 def processFolder(file_glob, bin_dist, bin_angle, out_file_ext=''):
-    # Overwrite Files for new data
-    with open("rad_d1" + out_file_ext, 'w') as out:
-        out.write('')
-    with open("cust_d1" + out_file_ext, 'w') as out:
-        out.write('')
 
     # Open all files in directory
     for filename in glob.glob(file_glob):
+        print(filename)
         rads = []
         with open(filename) as f:
             frames = processFile(f)
             for x in frames:
                 rads.extend([Rad(x)])
+
+            # Overwrite Files for new data
+            with open(filename + out_file_ext, 'w') as out:
+                out.write('')
+
 
         # histograms for d1
         dist_min = [x * float('inf') for x in range(5)] #[1,2,3,4,5,6,n]
@@ -102,47 +99,9 @@ def processFolder(file_glob, bin_dist, bin_angle, out_file_ext=''):
                 bin_angle_count[x][y] = bin_angle_count[x][y] / len(rads)
 
         # Write to File
-        with open("rad_d1" + out_file_ext, 'a') as out:
+        with open(filename + out_file_ext, 'a') as out:
             out.write(str(bin_dist_count[1::]))
             out.write(str(bin_angle_count[1::]))
-            out.write('\n')
-
-        # Do Custom Measurement
-        z_min = [x * float('inf') for x in range(5)] #[1,2,3,4,5,6,n]
-        z_max = [x * float('-inf') for x in range(5)]
-
-        for rad_frame in rads:
-            # Find maxes and mins
-            for i in range(len(rad_frame.joints)):
-                joint = rad_frame.joints[i]
-                if joint[2][2] < z_min[i]:
-                    z_min[i] = joint[2][2]
-                elif joint[2][2] > z_max[i]:
-                    z_max[i] = joint[2][2]
-
-        bin_z_count  = [x * 0 for x in range(5)]
-
-        for i in range(len(rad_frame.joints)):
-            range_size_z = (z_max[i] - z_min[i]) / bin_dist
-
-            z_dist_ranges = [(x * range_size_z + z_min[i], x * range_size_z + z_min[i] + range_size_z) for x in range(bin_dist)]
-            
-            bin_z_count[i]  = [x * 0 for x in range(bin_dist)]
-            
-            for rad_frame in rads:
-                joint_to_be_counted = rad_frame.joints[i]
-                for x in range(bin_dist):
-                    if joint_to_be_counted[2][2] > z_dist_ranges[x][0] and joint_to_be_counted[2][2] < z_dist_ranges[x][1]:
-                        bin_z_count[i][x] += 1
-                        break
-
-        for x in range(len(bin_z_count)):
-            for y in range(bin_dist):
-                bin_z_count[x][y] = bin_z_count[x][y] / len(rads)
-
-        # Write to File
-        with open("cust_d1" + out_file_ext, 'a') as out:
-            out.write(str(bin_z_count[1::]))
             out.write('\n')
 
         
@@ -159,7 +118,7 @@ def processFile(file):
              break
 
         curFrame.extend([RawJoint(nextDatapoint)])
-        for i in range(19):
+        for _ in range(18):
             curFrame.extend([RawJoint(file.readline())])
     
         frames.append(curFrame)
@@ -197,13 +156,36 @@ class Rad:
             self.right_foot,
         )
 
+        # See: include/astra/capi/streams/body_types.h
+        """
+        ASTRA_JOINT_HEAD              = 0,
+        ASTRA_JOINT_SHOULDER_SPINE    = 1,
+        ASTRA_JOINT_LEFT_SHOULDER     = 2,
+        ASTRA_JOINT_LEFT_ELBOW        = 3,
+        ASTRA_JOINT_LEFT_HAND         = 4,
+        ASTRA_JOINT_RIGHT_SHOULDER    = 5,
+        ASTRA_JOINT_RIGHT_ELBOW       = 6,
+        ASTRA_JOINT_RIGHT_HAND        = 7,
+        ASTRA_JOINT_MID_SPINE         = 8,
+        ASTRA_JOINT_BASE_SPINE        = 9,
+        ASTRA_JOINT_LEFT_HIP          = 10,
+        ASTRA_JOINT_LEFT_KNEE         = 11,
+        ASTRA_JOINT_LEFT_FOOT         = 12,
+        ASTRA_JOINT_RIGHT_HIP         = 13,
+        ASTRA_JOINT_RIGHT_KNEE        = 14,
+        ASTRA_JOINT_RIGHT_FOOT        = 15,
+        ASTRA_JOINT_LEFT_WRIST        = 16,
+        ASTRA_JOINT_RIGHT_WRIST       = 17,
+        ASTRA_JOINT_NECK              = 18,
+        ASTRA_JOINT_UNKNOWN           = 255,
+        """
         star = {
-            4  : self.head,
-            8  : self.left_hand,
-            16 : self.left_foot,
-            12 : self.right_hand,
-            20 : self.right_foot,
-            1  : self.hip
+            0  : self.head,
+            4  : self.left_hand,
+            12 : self.left_foot,
+            7  : self.right_hand,
+            15 : self.right_foot,
+            9  : self.hip
         }
 
         # Get Key Joints
@@ -211,16 +193,16 @@ class Rad:
             if x.jointID in star:
                 star[x.jointID][2] = x.Coords
 
-        center = star[1]
+        center = star[9]
             
         first = True
         for key, joint in star.items():
-            if key is 1:
+            if key is 9:
                 continue
             joint[0] = self.getDist(center[2], joint[2])
 
         for key, joint in star.items():
-            if key is 1:
+            if key is 9:
                 continue
             if first:
                 last_joint = self.left_hand

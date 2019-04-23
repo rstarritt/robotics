@@ -1,21 +1,30 @@
 # Main entry point for the python code
 import sys
+import os
 import sklearn as sk
 import tools_svm
 import pickle
 
-from data_reader import get_data
+from loader import loadData
 from sklearn import svm
 
 def main(argv):
-    if len(argv) <= 0:
-        print("Usage: python3 main.py training_file1 ... trainingfile_n")
+    if len(argv) != 1:
+        print("Usage: python3 main.py folder_with_datasets")
         exit(-1)
-
-    print("Reading Data files")
+    try:
+        for x in os.listdir(argv[0]):
+            print(x)
+            if argv[0][-1] == "/":
+                loadData(argv[0] + x)
+            else:
+                loadData(argv[0] + '/' +x)
+    except FileNotFoundError:
+        print("That is not a valid directory")
+        exit(-1)
+    # print("Reading Data files")
     data = []
-    for x in argv:
-        data.append(get_data(x))
+
 
     # Train SVM
     print("Training SVM")

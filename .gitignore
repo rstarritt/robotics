@@ -125,3 +125,4 @@ dmypy.json
 .pyre/
 python/*.obj
 python/*/*.obj
+*.processed
