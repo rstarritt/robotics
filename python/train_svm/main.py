@@ -10,11 +10,16 @@ from loader import loadData
 from sklearn import svm
 
 def main(argv):
-    data = []
 
+    # Check if the appropriate amount of arguments were passed
     if len(argv) != 1:
         print("Usage: python3 main.py folder_with_datasets")
         exit(-1)
+
+    print("Opening Datasets:")
+    data = []
+
+    # Read and convert training data
     try:
         for x in os.listdir(argv[0]):
             print(x)
@@ -28,14 +33,14 @@ def main(argv):
         exit(-1)
 
     # Train SVM
-    print("Training SVM")
+    print("\nTraining SVM")
     trained = tools_svm.train_svm(data)
 
     # Pickle it for later
     with open("trained.obj", "wb") as pickle_file:
         pickle.dump(trained, pickle_file)
 
-    print("SVM Stored")
+    print("\nSVM Stored")
 
 # allows for command line usage as exacutable
 if __name__ == "__main__":
