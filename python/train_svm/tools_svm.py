@@ -14,12 +14,14 @@ from sklearn import svm
 
 # Get data into a useful data frame
 def convert_data(raw_data):
-    pass
+    return DataFrame()
 
 # Train and return SVM
 def train_svm(data):
-    # Train test split
-    pass
+    # Get dataframe
+    data = convert_data(data)
+
+    # return tested svm
     return svm.SVC(kernel='linear', C=10)
 
 

@@ -12,20 +12,20 @@ def main(argv):
         print("Usage: python3 main.py training_file1 ... trainingfile_n")
         exit(-1)
 
-    print("Parsing files")
+    print("Reading Data files")
     data = []
-
     for x in argv:
         data.append(get_data(x))
-    
-    #print(data)
 
     # Train SVM
+    print("Training SVM")
     trained = tools_svm.train_svm(data)
 
     # Pickle it for later
     with open("trained.obj", "wb") as pickle_file:
         pickle.dump(trained, pickle_file)
+
+    print("SVM Stored")
 
 
 if __name__ == "__main__":
