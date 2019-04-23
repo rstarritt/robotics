@@ -3,6 +3,7 @@ import glob
 import os
 from pathlib import Path
 from math import sqrt, acos
+import pickle
 
 # File pathes of finished fiels
 pathes = (Path("./rad_d1"), Path("./rad_d1.t"), Path('./cust_d1'), Path('./cust_d1.t'))
@@ -21,15 +22,15 @@ def loadData(folder, bin_dist=7, bin_angle=7):
 
     # Prep file pathes for globs
     file_glob= folder + "/*.txt"
-    print(file_glob)
+
     # Open train and test
-    processFolder(file_glob, bin_dist, bin_angle, '.processed')
+    processFolder(file_glob, bin_dist, bin_angle, '.obj')
 
 def processFolder(file_glob, bin_dist, bin_angle, out_file_ext=''):
 
     # Open all files in directory
     for filename in glob.glob(file_glob):
-        print(filename)
+        #print(filename)
         rads = []
         with open(filename) as f:
             frames = processFile(f)
@@ -99,10 +100,8 @@ def processFolder(file_glob, bin_dist, bin_angle, out_file_ext=''):
                 bin_angle_count[x][y] = bin_angle_count[x][y] / len(rads)
 
         # Write to File
-        with open(filename + out_file_ext, 'a') as out:
-            out.write(str(bin_dist_count[1::]))
-            out.write(str(bin_angle_count[1::]))
-            out.write('\n')
+        with open(filename + out_file_ext, 'wb') as out:
+            pickle.dump([bin_dist_count,bin_angle_count], out)
 
         
 

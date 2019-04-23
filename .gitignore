@@ -123,6 +123,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-python/*.obj
-python/*/*.obj
+*.obj
 *.processed
