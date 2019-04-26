@@ -208,9 +208,9 @@ class Rad:
                 first = False
             joint[1] = self.getAngle(last_joint, joint, center)
             last_joint = joint
-
         self.getTheta()
         self.getPhi()
+        # print(self.theta, self.phi)
 
     def getDist(self, start, finish):
         return sqrt((start[0] - finish[0]) ** 2 + (start[1] - finish[1]) ** 2 + (start[2] - finish[2]) ** 2)
