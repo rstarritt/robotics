@@ -12,6 +12,17 @@ from sklearn import svm
 
 # Get data into a useful data frame
 def convert_data(raw_data):
+    data_frames = None
+    for data_folder in raw_data:
+        histograms = []
+
+        for data_file in data_folder[1]:
+            pass
+
+        classifier = data_folder[0]
+        #data_frames.append([DataFrame("pose": data_folder[0])])
+
+
     return DataFrame()
 
 # Train and return SVM
@@ -22,7 +33,8 @@ def train_svm(data):
     # Train test split
 
     # Fit SVM
-    
+    model = svm.SCV()
+    model.fit(data[['x','y']], data['class'])
     # return tested svm
     return svm.SVC(kernel='linear', C=10)
 

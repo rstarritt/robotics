@@ -24,9 +24,9 @@ def main(argv):
         for x in os.listdir(argv[0]):
             print(x)
             if argv[0][-1] == "/":
-                data.append(loadData(argv[0] + x))
+                data.append([x,loadData(argv[0] + x)])
             else:
-                data.append(loadData(argv[0] + '/' + x))
+                data.append([x,loadData(argv[0] + '/' + x)])
 
     except FileNotFoundError:
         print("That is not a valid directory")

@@ -97,8 +97,8 @@ def processFolder(file_glob, bin_dist, bin_angle, out_file_ext=''):
 
         # Write to File
         with open(filename + out_file_ext, 'wb') as out:
-            pickle.dump([filename, bin_dist_count, bin_angle_count], out)
-            results.append([filename, bin_dist_count, bin_angle_count])
+            pickle.dump([filename, bin_dist_count[1::], bin_angle_count[1::]], out)
+            results.append([filename, bin_dist_count[1::], bin_angle_count[1::]])
 
     return results
 
