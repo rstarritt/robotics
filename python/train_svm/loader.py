@@ -210,6 +210,7 @@ class Rad:
             last_joint = joint
 
         self.getTheta()
+        self.getPhi()
 
     def getDist(self, start, finish):
         return sqrt((start[0] - finish[0]) ** 2 + (start[1] - finish[1]) ** 2 + (start[2] - finish[2]) ** 2)
@@ -224,6 +225,13 @@ class Rad:
     def getTheta(self):
         thetaL = (atan2(self.left_hand[2][1] - self.hip[2][1], self.left_hand[2][0] - self.hip[2][0]) -  atan2(self.head[2][1] - self.hip[2][1], self.head[2][0] - self.hip[2][0]))
         self.theta = thetaL
-        #thetaR = (atan2(self.right_hand.joint_position_y - self.hip.joint_position_y, self.right_hand.joint_position_x - self.hip.joint_position_x) - 
-        #        atan2(self.head.joint_position_y - self.hip.joint_position_y, self.head.joint_position_x - self.hip.joint_position_x))
-        #self.theta = thetaL
+        thetaR = (atan2(self.right_hand[2][1] - self.hip[2][1], self.right_hand[2][0] - self.hip[2][0]) - 
+            atan2(self.head[2][1] - self.hip[2][1], self.head[2][0] - self.hip[2][0]))
+        self.theta = (thetaL, thetaR)
+
+    def getPhi(self):
+        phiL = (atan2(self.left_hand[2][1] - self.hip[2][1], self.left_hand[2][2] - self.hip[2][2]) - 
+            atan2(self.head[2][1] - self.hip[2][1], self.head[2][2] - self.hip[2][2]))
+        phiR = (atan2(self.right_hand[2][1] - self.hip[2][1], self.right_hand[2][2] - self.hip[2][2]) - 
+            atan2(self.head[2][1] - self.hip[2][1], self.head[2][2] - self.hip[2][2]))
+        self.phi = (phiL, phiR)
