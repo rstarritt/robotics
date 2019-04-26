@@ -11,8 +11,7 @@
             "program": "${workspaceFolder}/python/train_svm/main.py",
             "args": ["data"],
             "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}/python/train_svm/",
-            "preLaunchTask": "rm ${workspaceFolder}/python/train_svm/data/*/*.obj"
+            "cwd": "${workspaceFolder}/python/train_svm/"
         },
         {
             "name": "Python: Remote Attach",
