@@ -24,9 +24,9 @@ def processFolder(file_glob, bin_dist, bin_angle, out_file_ext=''):
         #print(filename)
         rads = []
 
-        #if os.path.isfile(filename + ".obj"):
-           # results.append(pickle.load(open(filename + ".obj", "rb")))
-           # continue
+        if os.path.isfile(filename + ".obj"):
+            results.append(pickle.load(open(filename + ".obj", "rb")))
+            continue
 
         with open(filename) as f:
             frames = processFile(f)
@@ -97,7 +97,7 @@ def processFolder(file_glob, bin_dist, bin_angle, out_file_ext=''):
 
         # Write to File
         with open(filename + out_file_ext, 'wb') as out:
-            #pickle.dump([filename, bin_dist_count[1::], bin_angle_count[1::]], out)
+            pickle.dump([filename, bin_dist_count[1::], bin_angle_count[1::]], out)
             results.append([filename, bin_dist_count[1::], bin_angle_count[1::]])
 
     return results

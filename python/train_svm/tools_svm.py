@@ -32,7 +32,6 @@ def convert_data(raw_data):
             data.append(row)
         
     data = DataFrame(data)
-    print(data)
     return data
 
 # Train and return SVM
@@ -53,11 +52,6 @@ def train_svm(data):
     # Test
     score = model.score(test[collist[:-1]], test[collist[-1]])
     print(f"model score: {score}")
-
-    #setup to get f-score and cv
-    #scorerVar = make_scorer(f1_score, pos_label=1)
-    #scores = cross_val_score(model, boat[["Pclass", "Age", "Pclass", "Fare"]], boat["Survived"],cv = 5, scoring = scorerVar)
-    #print(f"Cross Validation f1_score: {scores.mean()}")
 
     #confusion matrix
     print("Confusion Matrix")
