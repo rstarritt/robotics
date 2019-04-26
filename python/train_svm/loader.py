@@ -222,8 +222,8 @@ class Rad:
         return acos(dot / (start[0] * finish[0]))
 
     def getTheta(self):
-        thetaL = (atan2(self.left_hand.joint_position_y - self.hip.joint_position_y, self.left_hand.joint_position_x - self.hip.joint_position_x) - 
-            atan2(self.head.joint_position_y - self.hip.joint_position_y, self.head.joint_position_x - self.hip.joint_position_x))
-        thetaR = (atan2(self.right_hand.joint_position_y - self.hip.joint_position_y, self.right_hand.joint_position_x - self.hip.joint_position_x) - 
-            atan2(self.head.joint_position_y - self.hip.joint_position_y, self.head.joint_position_x - self.hip.joint_position_x))
-        self.theta = (thetaL, thetaR)
+        thetaL = (atan2(self.left_hand[2][1] - self.hip[2][1], self.left_hand[2][0] - self.hip[2][0]) -  atan2(self.head[2][1] - self.hip[2][1], self.head[2][0] - self.hip[2][0]))
+        self.theta = thetaL
+        #thetaR = (atan2(self.right_hand.joint_position_y - self.hip.joint_position_y, self.right_hand.joint_position_x - self.hip.joint_position_x) - 
+        #        atan2(self.head.joint_position_y - self.hip.joint_position_y, self.head.joint_position_x - self.hip.joint_position_x))
+        #self.theta = thetaL
