@@ -5,7 +5,11 @@ import sklearn as sk
 from scipy.stats import norm
 from pandas import Series, DataFrame
 from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
 from sklearn import svm
+from sklearn import metrics
+from sklearn.metrics import confusion_matrix, f1_score, classification_report, make_scorer
+from sklearn import model_selection
 
 # SVM is constructed accordinf to following slides
 # http://inside.mines.edu/~hzhang/Courses/CSCI473-573/Lectures/07-RobotLearning.pdf
@@ -40,11 +44,29 @@ def train_svm(data):
     train , test =train_test_split(data)
 
     # Fit SVM
-    collist = data.columns.tolist()
+    collist = train.columns.tolist()
     # you can now select from this list any arbritrary range
 
     model = svm.SVC(gamma=.1, C=10)
-    model.fit(data[collist[:-1]], data[collist[-1]])
+    model.fit(train[collist[:-1]], train[collist[-1]])
+
+    # Test
+    score = model.score(test[collist[:-1]], test[collist[-1]])
+    print(f"model score: {score}")
+
+    #setup to get f-score and cv
+    #scorerVar = make_scorer(f1_score, pos_label=1)
+    #scores = cross_val_score(model, boat[["Pclass", "Age", "Pclass", "Fare"]], boat["Survived"],cv = 5, scoring = scorerVar)
+    #print(f"Cross Validation f1_score: {scores.mean()}")
+
+    #confusion matrix
+    print("Confusion Matrix")
+    print(confusion_matrix(test[collist[-1]], model.predict(test[collist[:-1]])))
+
+    #classification report
+    print("\nClassification Report")
+    print(classification_report(test[collist[-1]], model.predict(test[collist[:-1]])))
+
     # return tested svm
     return model
 
