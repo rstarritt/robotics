@@ -26,12 +26,12 @@ def main():
         print(motion)
 
         s3 = subprocess.call("exec " + f'flite -voice rms -t "{motion}"', shell = True)
-
-        if os.path.isfile("rm test.txt"):
-            subprocess.call("rm test.txt", shell = True)
+        time.sleep(2)
+        #if os.path.isfile("rm test.txt"):
+            #subprocess.call("rm test.txt", shell = True)
         
         try:
-            subprocess.call("../../samples/bin/./BodyReaderPoll ./test.txt", shell = True, timeout = 1)
+            subprocess.call("../../samples/bin/./BodyReaderPoll ./test.txt", shell = True, timeout = 5)
         except:
             print("Data Read in")
         
@@ -51,18 +51,16 @@ def main():
                 if(int(tokens[1]) == 9):
                     trimmeData.append('\n')
             
-        print(trimmeData)
+        #print(trimmeData)
         f = open("../train_svm/finalData.txt", 'w')
         for i in trimmeData:
             if i != '\n':
                 f.write(str(i)+ ' ')
             else:
                 f.write(str(i))
-        result = correctMotion("finalData.txt", motion)
-        if result == False:
-            subprocess.call("exec " + "flite -voice rms -t \"Incorrect\"", shell = True)
-        else:
-            subprocess.call("exec " + "flite -voice rms -t \"Correct\"", shell = True)
+        result = correctMotion("../train_svm/finalData.txt", motion)
+        result = "left Arm forward"
+        subprocess.call("exec " + f'flite -voice rms -t "{result}"', shell = True)
 # allows for command line usage as exacutable
 if __name__ == "__main__":
     main()
