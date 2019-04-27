@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
+CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
+CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
 
 # Include any dependencies generated for this target.
 include sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/depend.make
@@ -59,16 +59,16 @@ include sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/flags.
 
 sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.o: sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/flags.make
 sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.o: sfml/MaskedColorViewer-SFML/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.o"
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.o -c /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.o"
+	cd /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.o -c /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML/main.cpp
 
 sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.i"
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML/main.cpp > CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.i
+	cd /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML/main.cpp > CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.i
 
 sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.s"
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML/main.cpp -o CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.s
+	cd /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML/main.cpp -o CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.s
 
 # Object files for target MaskedColorViewer-SFML
 MaskedColorViewer__SFML_OBJECTS = \
@@ -79,15 +79,15 @@ MaskedColorViewer__SFML_EXTERNAL_OBJECTS =
 
 bin/MaskedColorViewer-SFML: sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/main.cpp.o
 bin/MaskedColorViewer-SFML: sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/build.make
-bin/MaskedColorViewer-SFML: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core.so
-bin/MaskedColorViewer-SFML: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core_api.so
-bin/MaskedColorViewer-SFML: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra.so
-bin/MaskedColorViewer-SFML: /usr/lib/libsfml-graphics.so
-bin/MaskedColorViewer-SFML: /usr/lib/libsfml-window.so
-bin/MaskedColorViewer-SFML: /usr/lib/libsfml-system.so
+bin/MaskedColorViewer-SFML: /home/warfield/Code/robotics/lib/libastra_core.so
+bin/MaskedColorViewer-SFML: /home/warfield/Code/robotics/lib/libastra_core_api.so
+bin/MaskedColorViewer-SFML: /home/warfield/Code/robotics/lib/libastra.so
+bin/MaskedColorViewer-SFML: /usr/lib64/libsfml-graphics.so
+bin/MaskedColorViewer-SFML: /usr/lib64/libsfml-window.so
+bin/MaskedColorViewer-SFML: /usr/lib64/libsfml-system.so
 bin/MaskedColorViewer-SFML: sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/MaskedColorViewer-SFML"
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MaskedColorViewer-SFML.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/MaskedColorViewer-SFML"
+	cd /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MaskedColorViewer-SFML.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/build: bin/MaskedColorViewer-SFML
@@ -95,10 +95,10 @@ sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/build: bin/Mas
 .PHONY : sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/build
 
 sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/clean:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML && $(CMAKE_COMMAND) -P CMakeFiles/MaskedColorViewer-SFML.dir/cmake_clean.cmake
+	cd /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML && $(CMAKE_COMMAND) -P CMakeFiles/MaskedColorViewer-SFML.dir/cmake_clean.cmake
 .PHONY : sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/clean
 
 sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/depend:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/depend
 

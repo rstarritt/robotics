@@ -117,7 +117,6 @@ void output_joint(const int32_t bodyId, const astra_joint_t* joint, int i, char*
 //           worldPos->z,
 //           depthPos->x,
 //           depthPos->y);
-   // fp = fopen(filename,"w");
 
     printf("%i %c %d %c %.1f %c %.1f %c %.1f\n",frameIndex, ' ', i,' ',worldPos->x,' ',worldPos->y,' ', worldPos->z);
 

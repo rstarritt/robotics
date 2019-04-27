@@ -59,10 +59,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
+CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
+CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
 
 #=============================================================================
 # Directory level rules for directory c-api
@@ -76,6 +76,7 @@ c-api/all: c-api/InfraredReaderEvent/all
 c-api/all: c-api/InfraredReaderPoll/all
 c-api/all: c-api/InfraredColorReaderEvent/all
 c-api/all: c-api/BodyReaderPoll/all
+c-api/all: c-api/BodyReaderPollStdOut/all
 
 .PHONY : c-api/all
 
@@ -88,6 +89,7 @@ c-api/clean: c-api/InfraredReaderEvent/clean
 c-api/clean: c-api/InfraredReaderPoll/clean
 c-api/clean: c-api/InfraredColorReaderEvent/clean
 c-api/clean: c-api/BodyReaderPoll/clean
+c-api/clean: c-api/BodyReaderPollStdOut/clean
 
 .PHONY : c-api/clean
 
@@ -100,6 +102,7 @@ c-api/preinstall: c-api/InfraredReaderEvent/preinstall
 c-api/preinstall: c-api/InfraredReaderPoll/preinstall
 c-api/preinstall: c-api/InfraredColorReaderEvent/preinstall
 c-api/preinstall: c-api/BodyReaderPoll/preinstall
+c-api/preinstall: c-api/BodyReaderPollStdOut/preinstall
 
 .PHONY : c-api/preinstall
 
@@ -128,7 +131,7 @@ c-api/DepthReaderPoll/preinstall:
 c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/all:
 	$(MAKE) -f c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build.make c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/depend
 	$(MAKE) -f c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build.make c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=15,16 "Built target DepthReaderPoll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=17,18 "Built target DepthReaderPoll"
 .PHONY : c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/all
 
 # Include target in all.
@@ -138,9 +141,9 @@ all: c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/all
 
 # Build rule for subdir invocation for target.
 c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/rule
 
 # Convenience name for target.
@@ -183,7 +186,7 @@ c-api/DepthReaderEvent/preinstall:
 c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/all:
 	$(MAKE) -f c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/build.make c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/depend
 	$(MAKE) -f c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/build.make c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=11,12 "Built target DepthReaderEvent"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=13,14 "Built target DepthReaderEvent"
 .PHONY : c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/all
 
 # Include target in all.
@@ -193,9 +196,9 @@ all: c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/all
 
 # Build rule for subdir invocation for target.
 c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/rule
 
 # Convenience name for target.
@@ -238,7 +241,7 @@ c-api/ColorReaderPoll/preinstall:
 c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/all:
 	$(MAKE) -f c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/build.make c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/depend
 	$(MAKE) -f c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/build.make c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=7,8 "Built target ColorReaderPoll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=9,10 "Built target ColorReaderPoll"
 .PHONY : c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/all
 
 # Include target in all.
@@ -248,9 +251,9 @@ all: c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/all
 
 # Build rule for subdir invocation for target.
 c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/rule
 
 # Convenience name for target.
@@ -293,7 +296,7 @@ c-api/ColorReaderEvent/preinstall:
 c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/all:
 	$(MAKE) -f c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/build.make c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/depend
 	$(MAKE) -f c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/build.make c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=3,4 "Built target ColorReaderEvent"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=5,6 "Built target ColorReaderEvent"
 .PHONY : c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/all
 
 # Include target in all.
@@ -303,9 +306,9 @@ all: c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/all
 
 # Build rule for subdir invocation for target.
 c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/rule
 
 # Convenience name for target.
@@ -348,7 +351,7 @@ c-api/InfraredReaderEvent/preinstall:
 c-api/InfraredReaderEvent/CMakeFiles/InfraredReaderEvent.dir/all:
 	$(MAKE) -f c-api/InfraredReaderEvent/CMakeFiles/InfraredReaderEvent.dir/build.make c-api/InfraredReaderEvent/CMakeFiles/InfraredReaderEvent.dir/depend
 	$(MAKE) -f c-api/InfraredReaderEvent/CMakeFiles/InfraredReaderEvent.dir/build.make c-api/InfraredReaderEvent/CMakeFiles/InfraredReaderEvent.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=19,20 "Built target InfraredReaderEvent"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=21,22 "Built target InfraredReaderEvent"
 .PHONY : c-api/InfraredReaderEvent/CMakeFiles/InfraredReaderEvent.dir/all
 
 # Include target in all.
@@ -358,9 +361,9 @@ all: c-api/InfraredReaderEvent/CMakeFiles/InfraredReaderEvent.dir/all
 
 # Build rule for subdir invocation for target.
 c-api/InfraredReaderEvent/CMakeFiles/InfraredReaderEvent.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 c-api/InfraredReaderEvent/CMakeFiles/InfraredReaderEvent.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : c-api/InfraredReaderEvent/CMakeFiles/InfraredReaderEvent.dir/rule
 
 # Convenience name for target.
@@ -403,7 +406,7 @@ c-api/InfraredReaderPoll/preinstall:
 c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/all:
 	$(MAKE) -f c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/build.make c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/depend
 	$(MAKE) -f c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/build.make c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=21,22 "Built target InfraredReaderPoll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=23,24 "Built target InfraredReaderPoll"
 .PHONY : c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/all
 
 # Include target in all.
@@ -413,9 +416,9 @@ all: c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/all
 
 # Build rule for subdir invocation for target.
 c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/rule
 
 # Convenience name for target.
@@ -458,7 +461,7 @@ c-api/InfraredColorReaderEvent/preinstall:
 c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/all:
 	$(MAKE) -f c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/build.make c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/depend
 	$(MAKE) -f c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/build.make c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=17,18 "Built target InfraredColorReaderEvent"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=19,20 "Built target InfraredColorReaderEvent"
 .PHONY : c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/all
 
 # Include target in all.
@@ -468,9 +471,9 @@ all: c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/all
 
 # Build rule for subdir invocation for target.
 c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/rule
 
 # Convenience name for target.
@@ -513,7 +516,7 @@ c-api/BodyReaderPoll/preinstall:
 c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/all:
 	$(MAKE) -f c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/build.make c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/depend
 	$(MAKE) -f c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/build.make c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=1,2 "Built target BodyReaderPoll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=1,2 "Built target BodyReaderPoll"
 .PHONY : c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/all
 
 # Include target in all.
@@ -523,9 +526,9 @@ all: c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/all
 
 # Build rule for subdir invocation for target.
 c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/rule
 
 # Convenience name for target.
@@ -540,6 +543,61 @@ c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/clean:
 
 # clean rule for target.
 clean: c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory c-api/BodyReaderPollStdOut
+
+# Convenience name for "all" pass in the directory.
+c-api/BodyReaderPollStdOut/all: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/all
+
+.PHONY : c-api/BodyReaderPollStdOut/all
+
+# Convenience name for "clean" pass in the directory.
+c-api/BodyReaderPollStdOut/clean: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/clean
+
+.PHONY : c-api/BodyReaderPollStdOut/clean
+
+# Convenience name for "preinstall" pass in the directory.
+c-api/BodyReaderPollStdOut/preinstall:
+
+.PHONY : c-api/BodyReaderPollStdOut/preinstall
+
+#=============================================================================
+# Target rules for target c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir
+
+# All Build rule for target.
+c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/all:
+	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/depend
+	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=3,4 "Built target BodyReaderPollStdOut"
+.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/all
+
+# Include target in all.
+all: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
+.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/rule
+
+# Convenience name for target.
+BodyReaderPollStdOut: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/rule
+
+.PHONY : BodyReaderPollStdOut
+
+# clean rule for target.
+c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/clean:
+	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/clean
+.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/clean
+
+# clean rule for target.
+clean: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/clean
 
 .PHONY : clean
 
@@ -589,7 +647,7 @@ cpp-api/DepthReaderEventCPP/preinstall:
 cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/all:
 	$(MAKE) -f cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/build.make cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/depend
 	$(MAKE) -f cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/build.make cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=13,14 "Built target DepthReaderEventCPP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=15,16 "Built target DepthReaderEventCPP"
 .PHONY : cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/all
 
 # Include target in all.
@@ -599,9 +657,9 @@ all: cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/all
 
 # Build rule for subdir invocation for target.
 cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/rule
 
 # Convenience name for target.
@@ -644,7 +702,7 @@ cpp-api/ColorReaderEventCPP/preinstall:
 cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/all:
 	$(MAKE) -f cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/build.make cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/depend
 	$(MAKE) -f cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/build.make cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=5,6 "Built target ColorReaderEventCPP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=7,8 "Built target ColorReaderEventCPP"
 .PHONY : cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/all
 
 # Include target in all.
@@ -654,9 +712,9 @@ all: cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/all
 
 # Build rule for subdir invocation for target.
 cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/rule
 
 # Convenience name for target.
@@ -735,7 +793,7 @@ sfml/SimpleDepthViewer-SFML/preinstall:
 sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/all:
 	$(MAKE) -f sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/build.make sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/depend
 	$(MAKE) -f sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/build.make sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=31,32 "Built target SimpleDepthViewer-SFML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=33,34 "Built target SimpleDepthViewer-SFML"
 .PHONY : sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/all
 
 # Include target in all.
@@ -745,9 +803,9 @@ all: sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/all
 
 # Build rule for subdir invocation for target.
 sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/rule
 
 # Convenience name for target.
@@ -790,7 +848,7 @@ sfml/SimpleStreamViewer-SFML/preinstall:
 sfml/SimpleStreamViewer-SFML/CMakeFiles/SimpleStreamViewer-SFML.dir/all:
 	$(MAKE) -f sfml/SimpleStreamViewer-SFML/CMakeFiles/SimpleStreamViewer-SFML.dir/build.make sfml/SimpleStreamViewer-SFML/CMakeFiles/SimpleStreamViewer-SFML.dir/depend
 	$(MAKE) -f sfml/SimpleStreamViewer-SFML/CMakeFiles/SimpleStreamViewer-SFML.dir/build.make sfml/SimpleStreamViewer-SFML/CMakeFiles/SimpleStreamViewer-SFML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=33,34 "Built target SimpleStreamViewer-SFML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=35,36 "Built target SimpleStreamViewer-SFML"
 .PHONY : sfml/SimpleStreamViewer-SFML/CMakeFiles/SimpleStreamViewer-SFML.dir/all
 
 # Include target in all.
@@ -800,9 +858,9 @@ all: sfml/SimpleStreamViewer-SFML/CMakeFiles/SimpleStreamViewer-SFML.dir/all
 
 # Build rule for subdir invocation for target.
 sfml/SimpleStreamViewer-SFML/CMakeFiles/SimpleStreamViewer-SFML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleStreamViewer-SFML/CMakeFiles/SimpleStreamViewer-SFML.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : sfml/SimpleStreamViewer-SFML/CMakeFiles/SimpleStreamViewer-SFML.dir/rule
 
 # Convenience name for target.
@@ -845,7 +903,7 @@ sfml/SimpleColorViewer-SFML/preinstall:
 sfml/SimpleColorViewer-SFML/CMakeFiles/SimpleColorViewer-SFML.dir/all:
 	$(MAKE) -f sfml/SimpleColorViewer-SFML/CMakeFiles/SimpleColorViewer-SFML.dir/build.make sfml/SimpleColorViewer-SFML/CMakeFiles/SimpleColorViewer-SFML.dir/depend
 	$(MAKE) -f sfml/SimpleColorViewer-SFML/CMakeFiles/SimpleColorViewer-SFML.dir/build.make sfml/SimpleColorViewer-SFML/CMakeFiles/SimpleColorViewer-SFML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=29,30 "Built target SimpleColorViewer-SFML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=31,32 "Built target SimpleColorViewer-SFML"
 .PHONY : sfml/SimpleColorViewer-SFML/CMakeFiles/SimpleColorViewer-SFML.dir/all
 
 # Include target in all.
@@ -855,9 +913,9 @@ all: sfml/SimpleColorViewer-SFML/CMakeFiles/SimpleColorViewer-SFML.dir/all
 
 # Build rule for subdir invocation for target.
 sfml/SimpleColorViewer-SFML/CMakeFiles/SimpleColorViewer-SFML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleColorViewer-SFML/CMakeFiles/SimpleColorViewer-SFML.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : sfml/SimpleColorViewer-SFML/CMakeFiles/SimpleColorViewer-SFML.dir/rule
 
 # Convenience name for target.
@@ -900,7 +958,7 @@ sfml/MultiSensorViewer-SFML/preinstall:
 sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/all:
 	$(MAKE) -f sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/build.make sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/depend
 	$(MAKE) -f sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/build.make sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=25,26 "Built target MultiSensorViewer-SFML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=27,28 "Built target MultiSensorViewer-SFML"
 .PHONY : sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/all
 
 # Include target in all.
@@ -910,9 +968,9 @@ all: sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/all
 
 # Build rule for subdir invocation for target.
 sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/rule
 
 # Convenience name for target.
@@ -955,7 +1013,7 @@ sfml/SimpleBodyViewer-SFML/preinstall:
 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/all:
 	$(MAKE) -f sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/depend
 	$(MAKE) -f sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=27,28 "Built target SimpleBodyViewer-SFML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=29,30 "Built target SimpleBodyViewer-SFML"
 .PHONY : sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/all
 
 # Include target in all.
@@ -965,9 +1023,9 @@ all: sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/all
 
 # Build rule for subdir invocation for target.
 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/rule
 
 # Convenience name for target.
@@ -1010,7 +1068,7 @@ sfml/MaskedColorViewer-SFML/preinstall:
 sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/all:
 	$(MAKE) -f sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/build.make sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/depend
 	$(MAKE) -f sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/build.make sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=23,24 "Built target MaskedColorViewer-SFML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=25,26 "Built target MaskedColorViewer-SFML"
 .PHONY : sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/all
 
 # Include target in all.
@@ -1020,9 +1078,9 @@ all: sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/all
 
 # Build rule for subdir invocation for target.
 sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : sfml/MaskedColorViewer-SFML/CMakeFiles/MaskedColorViewer-SFML.dir/rule
 
 # Convenience name for target.
@@ -1065,7 +1123,7 @@ sfml/ColorizedBodyViewer-SFML/preinstall:
 sfml/ColorizedBodyViewer-SFML/CMakeFiles/ColorizedBodyViewer-SFML.dir/all:
 	$(MAKE) -f sfml/ColorizedBodyViewer-SFML/CMakeFiles/ColorizedBodyViewer-SFML.dir/build.make sfml/ColorizedBodyViewer-SFML/CMakeFiles/ColorizedBodyViewer-SFML.dir/depend
 	$(MAKE) -f sfml/ColorizedBodyViewer-SFML/CMakeFiles/ColorizedBodyViewer-SFML.dir/build.make sfml/ColorizedBodyViewer-SFML/CMakeFiles/ColorizedBodyViewer-SFML.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=9,10 "Built target ColorizedBodyViewer-SFML"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=11,12 "Built target ColorizedBodyViewer-SFML"
 .PHONY : sfml/ColorizedBodyViewer-SFML/CMakeFiles/ColorizedBodyViewer-SFML.dir/all
 
 # Include target in all.
@@ -1075,9 +1133,9 @@ all: sfml/ColorizedBodyViewer-SFML/CMakeFiles/ColorizedBodyViewer-SFML.dir/all
 
 # Build rule for subdir invocation for target.
 sfml/ColorizedBodyViewer-SFML/CMakeFiles/ColorizedBodyViewer-SFML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 sfml/ColorizedBodyViewer-SFML/CMakeFiles/ColorizedBodyViewer-SFML.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : sfml/ColorizedBodyViewer-SFML/CMakeFiles/ColorizedBodyViewer-SFML.dir/rule
 
 # Convenience name for target.

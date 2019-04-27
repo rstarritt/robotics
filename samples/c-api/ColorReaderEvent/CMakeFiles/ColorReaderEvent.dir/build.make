@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
+CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
+CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
 
 # Include any dependencies generated for this target.
 include c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/depend.make
@@ -59,16 +59,16 @@ include c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/flags.make
 
 c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/main.c.o: c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/flags.make
 c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/main.c.o: c-api/ColorReaderEvent/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/main.c.o"
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ColorReaderEvent.dir/main.c.o   -c /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/main.c.o"
+	cd /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ColorReaderEvent.dir/main.c.o   -c /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent/main.c
 
 c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ColorReaderEvent.dir/main.c.i"
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent/main.c > CMakeFiles/ColorReaderEvent.dir/main.c.i
+	cd /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent/main.c > CMakeFiles/ColorReaderEvent.dir/main.c.i
 
 c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ColorReaderEvent.dir/main.c.s"
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent/main.c -o CMakeFiles/ColorReaderEvent.dir/main.c.s
+	cd /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent/main.c -o CMakeFiles/ColorReaderEvent.dir/main.c.s
 
 # Object files for target ColorReaderEvent
 ColorReaderEvent_OBJECTS = \
@@ -79,12 +79,12 @@ ColorReaderEvent_EXTERNAL_OBJECTS =
 
 bin/ColorReaderEvent: c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/main.c.o
 bin/ColorReaderEvent: c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/build.make
-bin/ColorReaderEvent: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core.so
-bin/ColorReaderEvent: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core_api.so
-bin/ColorReaderEvent: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra.so
+bin/ColorReaderEvent: /home/warfield/Code/robotics/lib/libastra_core.so
+bin/ColorReaderEvent: /home/warfield/Code/robotics/lib/libastra_core_api.so
+bin/ColorReaderEvent: /home/warfield/Code/robotics/lib/libastra.so
 bin/ColorReaderEvent: c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/ColorReaderEvent"
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ColorReaderEvent.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/ColorReaderEvent"
+	cd /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ColorReaderEvent.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/build: bin/ColorReaderEvent
@@ -92,10 +92,10 @@ c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/build: bin/ColorReaderEve
 .PHONY : c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/build
 
 c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/clean:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent && $(CMAKE_COMMAND) -P CMakeFiles/ColorReaderEvent.dir/cmake_clean.cmake
+	cd /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent && $(CMAKE_COMMAND) -P CMakeFiles/ColorReaderEvent.dir/cmake_clean.cmake
 .PHONY : c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/clean
 
 c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/depend:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent /home/warfield/Code/robotics/samples/c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : c-api/ColorReaderEvent/CMakeFiles/ColorReaderEvent.dir/depend
 

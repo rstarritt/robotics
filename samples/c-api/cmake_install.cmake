@@ -1,4 +1,4 @@
-# Install script for directory: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api
+# Install script for directory: /home/warfield/Code/robotics/samples/c-api
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,14 +39,15 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderPoll/cmake_install.cmake")
-  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent/cmake_install.cmake")
-  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderPoll/cmake_install.cmake")
-  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderEvent/cmake_install.cmake")
-  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/InfraredReaderEvent/cmake_install.cmake")
-  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/InfraredReaderPoll/cmake_install.cmake")
-  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/InfraredColorReaderEvent/cmake_install.cmake")
-  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll/cmake_install.cmake")
+  include("/home/warfield/Code/robotics/samples/c-api/DepthReaderPoll/cmake_install.cmake")
+  include("/home/warfield/Code/robotics/samples/c-api/DepthReaderEvent/cmake_install.cmake")
+  include("/home/warfield/Code/robotics/samples/c-api/ColorReaderPoll/cmake_install.cmake")
+  include("/home/warfield/Code/robotics/samples/c-api/ColorReaderEvent/cmake_install.cmake")
+  include("/home/warfield/Code/robotics/samples/c-api/InfraredReaderEvent/cmake_install.cmake")
+  include("/home/warfield/Code/robotics/samples/c-api/InfraredReaderPoll/cmake_install.cmake")
+  include("/home/warfield/Code/robotics/samples/c-api/InfraredColorReaderEvent/cmake_install.cmake")
+  include("/home/warfield/Code/robotics/samples/c-api/BodyReaderPoll/cmake_install.cmake")
+  include("/home/warfield/Code/robotics/samples/c-api/BodyReaderPollStdOut/cmake_install.cmake")
 
 endif()
 

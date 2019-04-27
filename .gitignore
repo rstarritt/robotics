@@ -126,6 +126,7 @@ dmypy.json
 *.obj
 *.processed
 
+python/live_classification/astrapull
 python/master/finalData.txt
 python/master/rms
 astra.log

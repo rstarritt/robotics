@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
+CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
+CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles /home/warfield/Code/robotics/samples/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -213,6 +213,19 @@ BodyReaderPoll: cmake_check_build_system
 BodyReaderPoll/fast:
 	$(MAKE) -f c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/build.make c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/build
 .PHONY : BodyReaderPoll/fast
+
+#=============================================================================
+# Target rules for targets named BodyReaderPollStdOut
+
+# Build rule for target.
+BodyReaderPollStdOut: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BodyReaderPollStdOut
+.PHONY : BodyReaderPollStdOut
+
+# fast build rule for target.
+BodyReaderPollStdOut/fast:
+	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build
+.PHONY : BodyReaderPollStdOut/fast
 
 #=============================================================================
 # Target rules for targets named DepthReaderEventCPP
@@ -347,6 +360,7 @@ help:
 	@echo "... InfraredReaderPoll"
 	@echo "... InfraredColorReaderEvent"
 	@echo "... BodyReaderPoll"
+	@echo "... BodyReaderPollStdOut"
 	@echo "... DepthReaderEventCPP"
 	@echo "... ColorReaderEventCPP"
 	@echo "... SimpleDepthViewer-SFML"

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
+CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
+CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderPoll/CMakeFiles/progress.marks
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
+	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles /home/warfield/Code/robotics/samples/c-api/DepthReaderPoll/CMakeFiles/progress.marks
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/clean
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/preinstall
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/preinstall
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/rule:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/rule
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/rule
 .PHONY : c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ DepthReaderPoll: c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/rule
 
 # fast build rule for target.
 DepthReaderPoll/fast:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build.make c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build.make c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build
 .PHONY : DepthReaderPoll/fast
 
 main.o: main.c.o
@@ -131,7 +131,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build.make c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/main.c.o
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build.make c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -140,7 +140,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build.make c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/main.c.i
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build.make c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -149,7 +149,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build.make c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/main.c.s
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/build.make c-api/DepthReaderPoll/CMakeFiles/DepthReaderPoll.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -6,6 +6,7 @@ add_subdirectory(InfraredReaderEvent)
 add_subdirectory(InfraredReaderPoll)
 add_subdirectory(InfraredColorReaderEvent)
 add_subdirectory(BodyReaderPoll)
+add_subdirectory(BodyReaderPollStdOut)
 
 if (ASTRA_HAND)
     add_subdirectory(HandReader)
