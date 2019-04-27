@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
+CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
+CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # Include any dependencies generated for this target.
 include c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/depend.make
@@ -59,16 +59,16 @@ include c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/flags.make
 
 c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/main.c.o: c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/flags.make
 c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/main.c.o: c-api/BodyReaderPoll/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/main.c.o"
-	cd /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BodyReaderPoll.dir/main.c.o   -c /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/main.c.o"
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BodyReaderPoll.dir/main.c.o   -c /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll/main.c
 
 c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BodyReaderPoll.dir/main.c.i"
-	cd /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll/main.c > CMakeFiles/BodyReaderPoll.dir/main.c.i
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll/main.c > CMakeFiles/BodyReaderPoll.dir/main.c.i
 
 c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BodyReaderPoll.dir/main.c.s"
-	cd /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll/main.c -o CMakeFiles/BodyReaderPoll.dir/main.c.s
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll/main.c -o CMakeFiles/BodyReaderPoll.dir/main.c.s
 
 # Object files for target BodyReaderPoll
 BodyReaderPoll_OBJECTS = \
@@ -79,12 +79,12 @@ BodyReaderPoll_EXTERNAL_OBJECTS =
 
 bin/BodyReaderPoll: c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/main.c.o
 bin/BodyReaderPoll: c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/build.make
-bin/BodyReaderPoll: /home/warfield/Code/robotics/lib/libastra_core.so
-bin/BodyReaderPoll: /home/warfield/Code/robotics/lib/libastra_core_api.so
-bin/BodyReaderPoll: /home/warfield/Code/robotics/lib/libastra.so
+bin/BodyReaderPoll: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core.so
+bin/BodyReaderPoll: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core_api.so
+bin/BodyReaderPoll: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra.so
 bin/BodyReaderPoll: c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/BodyReaderPoll"
-	cd /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BodyReaderPoll.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/BodyReaderPoll"
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BodyReaderPoll.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/build: bin/BodyReaderPoll
@@ -92,10 +92,10 @@ c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/build: bin/BodyReaderPoll
 .PHONY : c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/build
 
 c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/clean:
-	cd /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll && $(CMAKE_COMMAND) -P CMakeFiles/BodyReaderPoll.dir/cmake_clean.cmake
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll && $(CMAKE_COMMAND) -P CMakeFiles/BodyReaderPoll.dir/cmake_clean.cmake
 .PHONY : c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/clean
 
 c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/depend:
-	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/depend
 

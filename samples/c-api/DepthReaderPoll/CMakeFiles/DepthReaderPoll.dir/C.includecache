@@ -6,83 +6,83 @@
 
 #IncludeRegexTransform: 
 
-/home/warfield/Code/robotics/include/astra/capi/astra.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/astra.h
 astra_core/capi/astra_core.h
 -
 astra_ctypes.h
-/home/warfield/Code/robotics/include/astra/capi/astra_ctypes.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/astra_ctypes.h
 streams/body_capi.h
-/home/warfield/Code/robotics/include/astra/capi/streams/body_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/body_capi.h
 streams/image_capi.h
-/home/warfield/Code/robotics/include/astra/capi/streams/image_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/image_capi.h
 streams/depth_capi.h
-/home/warfield/Code/robotics/include/astra/capi/streams/depth_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/depth_capi.h
 streams/color_capi.h
-/home/warfield/Code/robotics/include/astra/capi/streams/color_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/color_capi.h
 streams/infrared_capi.h
-/home/warfield/Code/robotics/include/astra/capi/streams/infrared_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/infrared_capi.h
 streams/hand_capi.h
-/home/warfield/Code/robotics/include/astra/capi/streams/hand_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/hand_capi.h
 streams/point_capi.h
-/home/warfield/Code/robotics/include/astra/capi/streams/point_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/point_capi.h
 streams/masked_color_capi.h
-/home/warfield/Code/robotics/include/astra/capi/streams/masked_color_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/masked_color_capi.h
 streams/colorized_body_capi.h
-/home/warfield/Code/robotics/include/astra/capi/streams/colorized_body_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/colorized_body_capi.h
 astra_version.h
-/home/warfield/Code/robotics/include/astra/capi/astra_version.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/astra_version.h
 
-/home/warfield/Code/robotics/include/astra/capi/astra_ctypes.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/astra_ctypes.h
 stdint.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/astra_version.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/astra_version.h
 astra_core/capi/astra_defines.h
 -
 astra_core/capi/astra_types.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/body_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/body_capi.h
 astra_core/capi/astra_defines.h
 -
 astra_core/capi/astra_types.h
 -
 body_types.h
-/home/warfield/Code/robotics/include/astra/capi/streams/body_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/body_types.h
 stdbool.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/body_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/body_types.h
 astra_core/capi/astra_types.h
 -
 astra/capi/astra_ctypes.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/color_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/color_capi.h
 astra_core/capi/astra_types.h
 -
 color_types.h
-/home/warfield/Code/robotics/include/astra/capi/streams/color_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/color_types.h
 stdbool.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/color_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/color_types.h
 image_types.h
-/home/warfield/Code/robotics/include/astra/capi/streams/image_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/image_types.h
 
-/home/warfield/Code/robotics/include/astra/capi/streams/colorized_body_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/colorized_body_capi.h
 astra_core/capi/astra_types.h
 -
 colorized_body_types.h
-/home/warfield/Code/robotics/include/astra/capi/streams/colorized_body_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/colorized_body_types.h
 
-/home/warfield/Code/robotics/include/astra/capi/streams/colorized_body_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/colorized_body_types.h
 astra_core/capi/astra_types.h
 -
 astra/capi/streams/image_types.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/depth_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/depth_capi.h
 astra_core/capi/astra_defines.h
 -
 astra_core/capi/astra_types.h
@@ -92,29 +92,29 @@ astra/capi/streams/depth_types.h
 stdbool.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/depth_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/depth_types.h
 astra_core/capi/astra_types.h
 -
 astra/capi/streams/image_types.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/hand_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/hand_capi.h
 astra_core/capi/astra_defines.h
 -
 astra_core/capi/astra_types.h
 -
 hand_types.h
-/home/warfield/Code/robotics/include/astra/capi/streams/hand_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/hand_types.h
 stdbool.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/hand_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/hand_types.h
 astra_core/capi/astra_types.h
 -
 astra/capi/astra_ctypes.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/image_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/image_capi.h
 astra_core/capi/astra_defines.h
 -
 astra_core/capi/astra_types.h
@@ -126,13 +126,13 @@ astra/capi/astra_ctypes.h
 stdbool.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/image_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/image_types.h
 stdint.h
 -
 astra_core/capi/astra_types.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/infrared_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/infrared_capi.h
 astra_core/capi/astra_defines.h
 -
 astra_core/capi/astra_types.h
@@ -142,61 +142,61 @@ astra/capi/streams/infrared_types.h
 stdbool.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/infrared_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/infrared_types.h
 astra_core/capi/astra_types.h
 -
 astra/capi/streams/image_types.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/masked_color_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/masked_color_capi.h
 astra_core/capi/astra_types.h
 -
 masked_color_types.h
-/home/warfield/Code/robotics/include/astra/capi/streams/masked_color_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/masked_color_types.h
 
-/home/warfield/Code/robotics/include/astra/capi/streams/masked_color_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/masked_color_types.h
 astra_core/capi/astra_types.h
 -
 astra/capi/streams/image_types.h
 -
 
-/home/warfield/Code/robotics/include/astra/capi/streams/point_capi.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/point_capi.h
 astra_core/capi/astra_types.h
 -
 point_types.h
-/home/warfield/Code/robotics/include/astra/capi/streams/point_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/point_types.h
 
-/home/warfield/Code/robotics/include/astra/capi/streams/point_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra/capi/streams/point_types.h
 astra_core/capi/astra_types.h
 -
 astra/capi/streams/image_types.h
 -
 
-/home/warfield/Code/robotics/include/astra_core/capi/astra_core.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra_core/capi/astra_core.h
 astra_defines.h
-/home/warfield/Code/robotics/include/astra_core/capi/astra_defines.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra_core/capi/astra_defines.h
 astra_types.h
-/home/warfield/Code/robotics/include/astra_core/capi/astra_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra_core/capi/astra_types.h
 astra_core_version.h
-/home/warfield/Code/robotics/include/astra_core/capi/astra_core_version.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra_core/capi/astra_core_version.h
 stdbool.h
 -
 
-/home/warfield/Code/robotics/include/astra_core/capi/astra_core_version.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra_core/capi/astra_core_version.h
 astra_defines.h
-/home/warfield/Code/robotics/include/astra_core/capi/astra_defines.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra_core/capi/astra_defines.h
 astra_types.h
-/home/warfield/Code/robotics/include/astra_core/capi/astra_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra_core/capi/astra_types.h
 
-/home/warfield/Code/robotics/include/astra_core/capi/astra_defines.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra_core/capi/astra_defines.h
 
-/home/warfield/Code/robotics/include/astra_core/capi/astra_types.h
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include/astra_core/capi/astra_types.h
 stdint.h
 -
 stddef.h
 -
 
-/home/warfield/Code/robotics/samples/c-api/DepthReaderPoll/main.c
+/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderPoll/main.c
 astra/capi/astra.h
 -
 stdio.h
