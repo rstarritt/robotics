@@ -18,4 +18,5 @@ else
     cmake . && make
     cd ../python/live_classification && cp ../../samples/bin/BodyReaderPollStdOut astrapull
 fi
-# ./a.out | python3 main.py
+
+./astrapull | python3 live_classifier.py

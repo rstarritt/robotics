@@ -20,10 +20,15 @@ def main():
         print("No trained SVM found. Please train one!")
         exit(-1)
     
-    # Get data from stdin
-    input()
-    # Classify
-    print("I don't know atm")
+    # Get rid of usb input  warning  
+    print(input())
+
+    # Parse input
+    while True:
+        print(input())
+
+        # Classify
+        print("I don't know atm")
 
 if __name__ == "__main__":
     main()
