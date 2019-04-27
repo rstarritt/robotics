@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderPoll/main.c" "/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/main.c.o"
+  "/home/warfield/Code/robotics/samples/c-api/ColorReaderPoll/main.c" "/home/warfield/Code/robotics/samples/c-api/ColorReaderPoll/CMakeFiles/ColorReaderPoll.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include"
+  "/home/warfield/Code/robotics/include"
   "common"
   )
 

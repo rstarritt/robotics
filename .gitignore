@@ -125,3 +125,7 @@ dmypy.json
 .pyre/
 *.obj
 *.processed
+
+python/master/finalData.txt
+python/master/rms
+astra.log

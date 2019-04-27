@@ -7,25 +7,39 @@ sys.path.append('../train_svm/')
 from motions import correctMotion
 
 def main():
-    s=subprocess.call("exec " + "../../flite-2.1-release/bin/./flite -voice rms -t \"would you like to play a game?\"", shell = True)
+    s=subprocess.call("exec " + "flite -voice rms -t \"would you like to play a game?\"", shell = True)
     time.sleep(1)
 
 
     motions = ["High V", "Low V", "T"]
+
+    # Make sure that all binaries have been made
+    if not os.path.isfile("../../samples/CMakeCache.txt"):
+        subprocess.call("cmake ../../samples", shell = True)
+        subprocess.call("make", shell = True, cwd="../../samples")
     
 
     while True:
         motion = motions[random.randint(0,2)]
         print(motion)
-        s3=subprocess.call("exec " + f'../../flite-2.1-release/bin/./flite -voice rms -t "{motion}"', shell = True)
-        rm=subprocess.call("rm test.txt", shell = True)
-        s2=subprocess.call("../../samples/bin/./BodyReaderPoll ../../python/master/test.txt", shell = True, timeout = 1)
+        s3=subprocess.call("exec " + f'flite -voice rms -t "{motion}"', shell = True)
+
+        try:
+            subprocess.call("rm test.txt", shell = True)
+        except FileNotFoundError:
+            pass
+        
+        try:
+            subprocess.call("../../samples/bin/./BodyReaderPoll ./test.txt", shell = True, timeout = 1)
+        except:
+            print("Data Read in")
+        
         print(s3)
         data = []
         trimmeData = []
         with open("test.txt","r") as f:
             for l in f:
-                data.append(l);
+                data.append(l)
         for i in range (len(data)-190,len(data)):
             tokens = data[i].split('   ')
             if(int(tokens[1]) == 0 or int(tokens[1]) == 4 or int(tokens[1]) == 7 or int(tokens[1]) == 9):
@@ -42,9 +56,9 @@ def main():
                 f.write(str(i))
         result = correctMotion("finalData.txt", motion)
         if result == False:
-            s4=subprocess.call("exec " + "../../flite-2.1-release/bin/./flite -voice rms -t \"Incorrect\"", shell = True)
+            s4=subprocess.call("exec " + "flite -voice rms -t \"Incorrect\"", shell = True)
         else:
-            s4=subprocess.call("exec " + "../../flite-2.1-release/bin/./flite -voice rms -t \"Correct\"", shell = True)
+            s4=subprocess.call("exec " + "flite -voice rms -t \"Correct\"", shell = True)
 # allows for command line usage as exacutable
 if __name__ == "__main__":
     main()
