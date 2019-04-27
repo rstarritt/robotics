@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
+CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
+CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # Include any dependencies generated for this target.
 include sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/depend.make
@@ -59,16 +59,16 @@ include sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/flags.ma
 
 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.o: sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/flags.make
 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.o: sfml/SimpleBodyViewer-SFML/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.o"
-	cd /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.o -c /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.o"
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.o -c /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML/main.cpp
 
 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.i"
-	cd /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML/main.cpp > CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.i
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML/main.cpp > CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.i
 
 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.s"
-	cd /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML/main.cpp -o CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.s
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML/main.cpp -o CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.s
 
 # Object files for target SimpleBodyViewer-SFML
 SimpleBodyViewer__SFML_OBJECTS = \
@@ -79,15 +79,15 @@ SimpleBodyViewer__SFML_EXTERNAL_OBJECTS =
 
 bin/SimpleBodyViewer-SFML: sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.o
 bin/SimpleBodyViewer-SFML: sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make
-bin/SimpleBodyViewer-SFML: /home/warfield/Code/robotics/lib/libastra_core.so
-bin/SimpleBodyViewer-SFML: /home/warfield/Code/robotics/lib/libastra_core_api.so
-bin/SimpleBodyViewer-SFML: /home/warfield/Code/robotics/lib/libastra.so
-bin/SimpleBodyViewer-SFML: /usr/lib64/libsfml-graphics.so
-bin/SimpleBodyViewer-SFML: /usr/lib64/libsfml-window.so
-bin/SimpleBodyViewer-SFML: /usr/lib64/libsfml-system.so
+bin/SimpleBodyViewer-SFML: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core.so
+bin/SimpleBodyViewer-SFML: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core_api.so
+bin/SimpleBodyViewer-SFML: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra.so
+bin/SimpleBodyViewer-SFML: /usr/lib/libsfml-graphics.so
+bin/SimpleBodyViewer-SFML: /usr/lib/libsfml-window.so
+bin/SimpleBodyViewer-SFML: /usr/lib/libsfml-system.so
 bin/SimpleBodyViewer-SFML: sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/SimpleBodyViewer-SFML"
-	cd /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SimpleBodyViewer-SFML.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/SimpleBodyViewer-SFML"
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SimpleBodyViewer-SFML.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build: bin/SimpleBodyViewer-SFML
@@ -95,10 +95,10 @@ sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build: bin/Simpl
 .PHONY : sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build
 
 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/clean:
-	cd /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML && $(CMAKE_COMMAND) -P CMakeFiles/SimpleBodyViewer-SFML.dir/cmake_clean.cmake
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML && $(CMAKE_COMMAND) -P CMakeFiles/SimpleBodyViewer-SFML.dir/cmake_clean.cmake
 .PHONY : sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/clean
 
 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/depend:
-	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/depend
 
