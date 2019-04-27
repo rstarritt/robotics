@@ -5,9 +5,11 @@ import pickle
 import sklearn as sk
 import pickle
 import sys
+import time
 
 from sklearn import svm
 from liveloader import loadData
+from pandas import DataFrame
 
 # This expects a stream of data from the astra software
 # through a pipe into stdin.
@@ -28,12 +30,42 @@ def main():
     # Parse input
     while True:
         # collect Data over time period
-        raw = input()
-        print(raw)
+        timer = time.process_time()
+        data = []
+
+        while time.process_time() - timer < 5: 
+            data.append(input())
+
+        print(data)
+        data = loadData(data)
+        print(data)
 
         # Classify
-        print("I don't know atm")
-        #model.predict("berg")
+        data = convert_data(data)
+
+        collist = data.columns.tolist()
+
+        print(model.predict(data[collist[:-1]]))
+
+def convert_data(raw_data):
+    data = []
+
+    for folder in raw_data:
+        classification = folder[0]
+
+        for data_file in folder[1]:
+            row = []
+            data_file[1].extend(data_file[2])
+            for x in data_file[1]:
+                for y in x:
+                    row.extend([y])
+
+            row.append(classification)
+            data.append(row)
+        
+    data = DataFrame(data)
+    return data
+
 
 if __name__ == "__main__":
     main()

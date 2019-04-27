@@ -3,7 +3,7 @@ import pandas as pd
 import sklearn as sk
 
 from scipy.stats import norm
-from pandas import Series, DataFrame
+from pandas import DataFrame
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score, GridSearchCV
 from sklearn import svm
@@ -40,10 +40,10 @@ def train_svm(data):
     data = convert_data(data)
 
     # Train test split
-    train , test =train_test_split(data)
+    train , test = train_test_split(data)
 
     # Fit SVM
-    collist = train.columns.tolist()
+    collist = data.columns.tolist()
     # you can now select from this list any arbritrary range
 
     model = svm.SVC(gamma=.1, C=10)
