@@ -102,7 +102,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "c-api/InfraredReaderPoll/CMakeFiles/InfraredReaderPoll.dir/DependInfo.cmake"
   "c-api/InfraredColorReaderEvent/CMakeFiles/InfraredColorReaderEvent.dir/DependInfo.cmake"
   "c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/DependInfo.cmake"
-  "c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/DependInfo.cmake"
+  "c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/DependInfo.cmake"
   "cpp-api/DepthReaderEventCPP/CMakeFiles/DepthReaderEventCPP.dir/DependInfo.cmake"
   "cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/DependInfo.cmake"
   "sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/DependInfo.cmake"

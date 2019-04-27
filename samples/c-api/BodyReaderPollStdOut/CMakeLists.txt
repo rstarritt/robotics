@@ -1,4 +1,4 @@
-set (_projname "BodyReaderPollStd")
+set (_projname "BodyReaderPollStdOut")
 
 set (${_projname}_SOURCES
   main.c

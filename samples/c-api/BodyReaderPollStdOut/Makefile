@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/rule:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/rule
-.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/rule
+c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/rule:
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/rule
+.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/rule
 
 # Convenience name for target.
-BodyReaderPollStd: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/rule
+BodyReaderPollStdOut: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/rule
 
-.PHONY : BodyReaderPollStd
+.PHONY : BodyReaderPollStdOut
 
 # fast build rule for target.
-BodyReaderPollStd/fast:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build
-.PHONY : BodyReaderPollStd/fast
+BodyReaderPollStdOut/fast:
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build
+.PHONY : BodyReaderPollStdOut/fast
 
 main.o: main.c.o
 
@@ -131,7 +131,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/main.c.o
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -140,7 +140,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/main.c.i
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -149,7 +149,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/main.c.s
+	cd /home/warfield/Code/robotics/samples && $(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -159,7 +159,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... BodyReaderPollStd"
+	@echo "... BodyReaderPollStdOut"
 	@echo "... edit_cache"
 	@echo "... main.o"
 	@echo "... main.i"
