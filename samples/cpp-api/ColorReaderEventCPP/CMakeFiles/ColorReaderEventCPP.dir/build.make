@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
+CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
+CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # Include any dependencies generated for this target.
 include cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/depend.make
@@ -59,16 +59,16 @@ include cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/flags.mak
 
 cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/main.cpp.o: cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/flags.make
 cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/main.cpp.o: cpp-api/ColorReaderEventCPP/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/main.cpp.o"
-	cd /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ColorReaderEventCPP.dir/main.cpp.o -c /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/main.cpp.o"
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ColorReaderEventCPP.dir/main.cpp.o -c /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP/main.cpp
 
 cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ColorReaderEventCPP.dir/main.cpp.i"
-	cd /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP/main.cpp > CMakeFiles/ColorReaderEventCPP.dir/main.cpp.i
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP/main.cpp > CMakeFiles/ColorReaderEventCPP.dir/main.cpp.i
 
 cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ColorReaderEventCPP.dir/main.cpp.s"
-	cd /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP/main.cpp -o CMakeFiles/ColorReaderEventCPP.dir/main.cpp.s
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP/main.cpp -o CMakeFiles/ColorReaderEventCPP.dir/main.cpp.s
 
 # Object files for target ColorReaderEventCPP
 ColorReaderEventCPP_OBJECTS = \
@@ -79,12 +79,12 @@ ColorReaderEventCPP_EXTERNAL_OBJECTS =
 
 bin/ColorReaderEventCPP: cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/main.cpp.o
 bin/ColorReaderEventCPP: cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/build.make
-bin/ColorReaderEventCPP: /home/warfield/Code/robotics/lib/libastra_core.so
-bin/ColorReaderEventCPP: /home/warfield/Code/robotics/lib/libastra_core_api.so
-bin/ColorReaderEventCPP: /home/warfield/Code/robotics/lib/libastra.so
+bin/ColorReaderEventCPP: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core.so
+bin/ColorReaderEventCPP: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core_api.so
+bin/ColorReaderEventCPP: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra.so
 bin/ColorReaderEventCPP: cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/ColorReaderEventCPP"
-	cd /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ColorReaderEventCPP.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/ColorReaderEventCPP"
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ColorReaderEventCPP.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/build: bin/ColorReaderEventCPP
@@ -92,10 +92,10 @@ cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/build: bin/ColorR
 .PHONY : cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/build
 
 cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/clean:
-	cd /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP && $(CMAKE_COMMAND) -P CMakeFiles/ColorReaderEventCPP.dir/cmake_clean.cmake
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP && $(CMAKE_COMMAND) -P CMakeFiles/ColorReaderEventCPP.dir/cmake_clean.cmake
 .PHONY : cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/clean
 
 cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/depend:
-	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP /home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cpp-api/ColorReaderEventCPP/CMakeFiles/ColorReaderEventCPP.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
+CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
+CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles /home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML/CMakeFiles/progress.marks
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML/CMakeFiles/progress.marks
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/clean
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/preinstall
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/preinstall
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/rule:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/rule
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f CMakeFiles/Makefile2 sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/rule
 .PHONY : sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ SimpleBodyViewer-SFML: sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SF
 
 # fast build rule for target.
 SimpleBodyViewer-SFML/fast:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build
 .PHONY : SimpleBodyViewer-SFML/fast
 
 main.o: main.cpp.o
@@ -131,7 +131,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.o
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -140,7 +140,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.i
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -149,7 +149,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/warfield/Code/robotics/samples && $(MAKE) -f sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.s
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(MAKE) -f sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/build.make sfml/SimpleBodyViewer-SFML/CMakeFiles/SimpleBodyViewer-SFML.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

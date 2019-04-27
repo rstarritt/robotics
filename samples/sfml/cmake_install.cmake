@@ -1,4 +1,4 @@
-# Install script for directory: /home/warfield/Code/robotics/samples/sfml
+# Install script for directory: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/warfield/Code/robotics/samples/sfml/SimpleDepthViewer-SFML/cmake_install.cmake")
-  include("/home/warfield/Code/robotics/samples/sfml/SimpleStreamViewer-SFML/cmake_install.cmake")
-  include("/home/warfield/Code/robotics/samples/sfml/SimpleColorViewer-SFML/cmake_install.cmake")
-  include("/home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML/cmake_install.cmake")
-  include("/home/warfield/Code/robotics/samples/sfml/SimpleBodyViewer-SFML/cmake_install.cmake")
-  include("/home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML/cmake_install.cmake")
-  include("/home/warfield/Code/robotics/samples/sfml/ColorizedBodyViewer-SFML/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleDepthViewer-SFML/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleStreamViewer-SFML/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleColorViewer-SFML/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleBodyViewer-SFML/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/ColorizedBodyViewer-SFML/cmake_install.cmake")
 
 endif()
 

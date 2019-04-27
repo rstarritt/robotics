@@ -1,4 +1,4 @@
-# Install script for directory: /home/warfield/Code/robotics/samples/cpp-api
+# Install script for directory: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/warfield/Code/robotics/samples/cpp-api/DepthReaderEventCPP/cmake_install.cmake")
-  include("/home/warfield/Code/robotics/samples/cpp-api/ColorReaderEventCPP/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/DepthReaderEventCPP/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/ColorReaderEventCPP/cmake_install.cmake")
 
 endif()
 

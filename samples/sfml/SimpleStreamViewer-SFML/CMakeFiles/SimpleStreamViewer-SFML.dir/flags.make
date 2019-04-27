@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -fPIC -std=c++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/warfield/Code/robotics/include -I/home/warfield/Code/robotics/samples/common 
+CXX_INCLUDES = -I/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include -I/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/common 
 

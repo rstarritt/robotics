@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/warfield/Code/robotics/samples/sfml/SimpleDepthViewer-SFML/main.cpp" "/home/warfield/Code/robotics/samples/sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/main.cpp.o"
+  "/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleDepthViewer-SFML/main.cpp" "/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/SimpleDepthViewer-SFML/CMakeFiles/SimpleDepthViewer-SFML.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/warfield/Code/robotics/include"
+  "/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/include"
   "common"
   )
 
