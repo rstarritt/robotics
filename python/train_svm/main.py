@@ -13,35 +13,36 @@ from motions import correctMotion
 def main(argv):
 	correctMotion("test.txt", "High V")
     # Check if the appropriate amount of arguments were passed
-   #if len(argv) != 1:
-   #    print("Usage: python3 main.py folder_with_datasets")
-   #    exit(-1)
 
-   #print("Opening Datasets:")
-   #data = []
+    if len(argv) != 1:
+        print("Usage: python3 main.py folder_with_datasets")
+        exit(-1)
 
-   ## Read and convert training data
-   #try:
-   #    for x in os.listdir(argv[0]):
-   #        print(x)
-   #        if argv[0][-1] == "/":
-   #            data.append(loadData(argv[0] + x))
-   #        else:
-   #            data.append(loadData(argv[0] + '/' + x))
+    print("Opening Datasets:")
+    data = []
 
-   #except FileNotFoundError:
-   #    print("That is not a valid directory")
-   #    exit(-1)
+    # Read and convert training data
+    try:
+        for x in os.listdir(argv[0]):
+            print(x)
+            if argv[0][-1] == "/":
+                data.append([x,loadData(argv[0] + x)])
+            else:
+                data.append([x,loadData(argv[0] + '/' + x)])
 
-   ## Train SVM
-   #print("\nTraining SVM")
-   #trained = tools_svm.train_svm(data)
+    except FileNotFoundError:
+        print("That is not a valid directory")
+        exit(-1)
 
-   ## Pickle it for later
-   #with open("trained.obj", "wb") as pickle_file:
-   #    pickle.dump(trained, pickle_file)
+    # Train SVM
+    print("\nTraining SVM")
+    trained = tools_svm.train_svm(data)
 
-   #print("\nSVM Stored")
+    # Pickle it for later
+    with open("trained.obj", "wb") as pickle_file:
+        pickle.dump(trained, pickle_file)
+
+    print("\nSVM Stored")
 
 # allows for command line usage as exacutable
 if __name__ == "__main__":

@@ -8,6 +8,8 @@ from math import atan2
 # compare averages to hardcoded angles
 # will be called as a function
 
+__name__ = "motions"
+
 def correctMotion(filename, motionname):
     # ((thetaMin, thetaMax),(phiMin,phiMax))
     highVrange = ((0.35, 0.6),(0.2, 0.6))
