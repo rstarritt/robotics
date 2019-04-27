@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 import os, signal
 import subprocess
@@ -7,7 +9,7 @@ sys.path.append('../train_svm/')
 from motions import correctMotion
 
 def main():
-    s=subprocess.call("exec " + "flite -voice rms -t \"would you like to play a game?\"", shell = True)
+    subprocess.call("exec " + "flite -voice rms -t \"would you like to play a game?\"", shell = True)
     time.sleep(1)
 
 
@@ -22,12 +24,11 @@ def main():
     while True:
         motion = motions[random.randint(0,2)]
         print(motion)
-        s3=subprocess.call("exec " + f'flite -voice rms -t "{motion}"', shell = True)
 
-        try:
+        s3 = subprocess.call("exec " + f'flite -voice rms -t "{motion}"', shell = True)
+
+        if os.path.isfile("rm test.txt"):
             subprocess.call("rm test.txt", shell = True)
-        except FileNotFoundError:
-            pass
         
         try:
             subprocess.call("../../samples/bin/./BodyReaderPoll ./test.txt", shell = True, timeout = 1)
@@ -37,6 +38,9 @@ def main():
         print(s3)
         data = []
         trimmeData = []
+        if not os.path.isfile("test.txt"):
+            continue
+            
         with open("test.txt","r") as f:
             for l in f:
                 data.append(l)
@@ -56,9 +60,9 @@ def main():
                 f.write(str(i))
         result = correctMotion("finalData.txt", motion)
         if result == False:
-            s4=subprocess.call("exec " + "flite -voice rms -t \"Incorrect\"", shell = True)
+            subprocess.call("exec " + "flite -voice rms -t \"Incorrect\"", shell = True)
         else:
-            s4=subprocess.call("exec " + "flite -voice rms -t \"Correct\"", shell = True)
+            subprocess.call("exec " + "flite -voice rms -t \"Correct\"", shell = True)
 # allows for command line usage as exacutable
 if __name__ == "__main__":
     main()
