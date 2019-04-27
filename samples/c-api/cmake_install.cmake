@@ -47,6 +47,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/warfield/Code/robotics/samples/c-api/InfraredReaderPoll/cmake_install.cmake")
   include("/home/warfield/Code/robotics/samples/c-api/InfraredColorReaderEvent/cmake_install.cmake")
   include("/home/warfield/Code/robotics/samples/c-api/BodyReaderPoll/cmake_install.cmake")
+  include("/home/warfield/Code/robotics/samples/c-api/BodyReaderPollStdOut/cmake_install.cmake")
 
 endif()
 

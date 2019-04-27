@@ -26,6 +26,9 @@
 /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll/CMakeFiles/rebuild_cache.dir
 /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir
 /home/warfield/Code/robotics/samples/c-api/BodyReaderPoll/CMakeFiles/edit_cache.dir
+/home/warfield/Code/robotics/samples/c-api/BodyReaderPollStdOut/CMakeFiles/rebuild_cache.dir
+/home/warfield/Code/robotics/samples/c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir
+/home/warfield/Code/robotics/samples/c-api/BodyReaderPollStdOut/CMakeFiles/edit_cache.dir
 /home/warfield/Code/robotics/samples/cpp-api/CMakeFiles/rebuild_cache.dir
 /home/warfield/Code/robotics/samples/cpp-api/CMakeFiles/edit_cache.dir
 /home/warfield/Code/robotics/samples/cpp-api/DepthReaderEventCPP/CMakeFiles/rebuild_cache.dir
