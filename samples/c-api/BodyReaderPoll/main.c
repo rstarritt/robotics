@@ -119,13 +119,9 @@ void output_joint(const int32_t bodyId, const astra_joint_t* joint, int i, char*
 //           depthPos->y);
     
    // fp = fopen(filename,"w");
-    if(fopen(fileName, "a")){
 //        fp = fopen(fileName, "a");
-        fprintf(fp, "%i %c %d %c %.1f %c %.1f %c %.1f\n",frameIndex, ' ', i,' ',worldPos->x,' ',worldPos->y,' ', worldPos->z);
-    }
-    else{
-        printf("HELP");
-    }
+    fprintf(fp, "%i %c %d %c %.1f %c %.1f %c %.1f\n",frameIndex, ' ', i,' ',worldPos->x,' ',worldPos->y,' ', worldPos->z);
+    
 //    fflush(fp);
 //    fclose(fp);
     // orientation is a 3x3 rotation matrix where the column vectors also
@@ -260,7 +256,7 @@ int main(int argc, char* argv[])
         filename = argv[1];
     }
     FILE *fp;
-    fp = fopen(fileName, "a");
+    fp = fopen(filename, "a");
     do
     {
         astra_update();
