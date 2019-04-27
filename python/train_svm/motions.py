@@ -90,6 +90,24 @@ def correctMotion(filename, motionname):
             return "Correct"
         return instructions
     elif motionname is "Low V":
+         # if theta in range and phi in range, return correct, else return fail reason
+        # thetaR (angles[0][1]) is negatives
+        if angles[0][0] >= lowVrange[0][0]:
+            truthTable[0] = True
+        if angles[0][0] <= lowVrange[0][1]:
+            truthTable[1] = True
+        if angles[0][1] <= 0 - lowVrange[0][0]:
+            truthTable[2] = True
+        if angles[0][1] >= 0 - lowVrange[0][1]:
+            truthTable[3] = True
+        if angles[1][0] >= lowVrange[1][0]:
+            truthTable[4] = True
+        if angles[1][0] <= lowVrange[1][1]:
+            truthTable[5] = True
+        if angles[1][1] >= lowVrange[1][0]:
+            truthTable[6] = True
+        if angles[1][1] <= lowVrange[1][1]:
+            truthTable[7] = True
         return "Incomplete"
     elif motionname is "T":
         return "incomplete"
