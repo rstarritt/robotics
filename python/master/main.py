@@ -59,7 +59,6 @@ def main():
             else:
                 f.write(str(i))
         result = correctMotion("../train_svm/finalData.txt", motion)
-        result = "left Arm forward"
         subprocess.call("exec " + f'flite -voice rms -t "{result}"', shell = True)
 # allows for command line usage as exacutable
 if __name__ == "__main__":
