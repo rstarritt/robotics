@@ -90,7 +90,7 @@ void output_bodyframe_info(astra_bodyframe_t bodyFrame)
 //        height);
 }
 
-void output_joint(const int32_t bodyId, const astra_joint_t* joint, int i, char* fileName, int frameIndex)
+void output_joint(const int32_t bodyId, const astra_joint_t* joint, int i, char* fileName, FILE *fp, int frameIndex)
 {
     // jointType is one of ASTRA_JOINT_* which exists for each joint type
     const astra_joint_type_t jointType = joint->type;
@@ -117,7 +117,7 @@ void output_joint(const int32_t bodyId, const astra_joint_t* joint, int i, char*
 //           worldPos->z,
 //           depthPos->x,
 //           depthPos->y);
-    FILE *fp;
+    
    // fp = fopen(filename,"w");
     if(fopen(fileName, "a")){
         fp = fopen(fileName, "a");
@@ -156,7 +156,7 @@ void output_hand_poses(const astra_body_t* body)
 //        rightHandPose);
 }
 
-void output_bodies(astra_bodyframe_t bodyFrame, char* fileName, int frameIndex)
+void output_bodies(astra_bodyframe_t bodyFrame, char* fileName, FILE *fp int frameIndex)
 {
     int i;
     astra_body_list_t bodyList;
@@ -208,7 +208,7 @@ void output_bodies(astra_bodyframe_t bodyFrame, char* fileName, int frameIndex)
             
             for(int i=0;i<19;i++){
                 const astra_joint_t* joint = &body->joints[i];
-                output_joint(bodyId, joint,i, fileName,frameIndex);
+                output_joint(bodyId, joint,i, fileName, fp, frameIndex);
             }
 
             output_hand_poses(body);
@@ -224,7 +224,7 @@ void output_bodies(astra_bodyframe_t bodyFrame, char* fileName, int frameIndex)
     }
 }
 
-void output_bodyframe(astra_bodyframe_t bodyFrame, char* fileName, int frameIndex)
+void output_bodyframe(astra_bodyframe_t bodyFrame, char* fileName, FILE *fp, int frameIndex)
 {
     output_floor(bodyFrame);
 
@@ -232,7 +232,7 @@ void output_bodyframe(astra_bodyframe_t bodyFrame, char* fileName, int frameInde
 
     output_bodyframe_info(bodyFrame);
 
-    output_bodies(bodyFrame, fileName, frameIndex);
+    output_bodies(bodyFrame, fileName, fp, frameIndex);
 }
 
 int main(int argc, char* argv[])
@@ -259,6 +259,7 @@ int main(int argc, char* argv[])
     if (argc > 1) {
         filename = argv[1];
     }
+    FILE *fp;
     do
     {
         astra_update();
@@ -275,7 +276,7 @@ int main(int argc, char* argv[])
             astra_bodyframe_get_frameindex(bodyFrame, &frameIndex);
 //            printf("Frame index: %d\n", frameIndex);
 
-            output_bodyframe(bodyFrame,filename, frameIndex);
+            output_bodyframe(bodyFrame,filename, fp, frameIndex);
 
 //            printf("----------------------------\n");
 
