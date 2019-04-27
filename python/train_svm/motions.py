@@ -46,6 +46,7 @@ def correctMotion(filename, motionname):
     angles = []
     angles.append(getTheta(joint0avg, joint4avg, joint7avg, joint9avg))
     angles.append(getPhi(joint0avg, joint4avg, joint7avg, joint9avg))
+    print(angles)
 
     # truthTable has every condition for the angles being in range
     truthTable = [False, False, False, False, False, False, False, False]

@@ -156,7 +156,7 @@ void output_hand_poses(const astra_body_t* body)
 //        rightHandPose);
 }
 
-void output_bodies(astra_bodyframe_t bodyFrame, char* fileName, FILE *fp int frameIndex)
+void output_bodies(astra_bodyframe_t bodyFrame, char* fileName, FILE *fp, int frameIndex)
 {
     int i;
     astra_body_list_t bodyList;

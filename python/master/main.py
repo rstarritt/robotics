@@ -23,15 +23,15 @@ def main():
 
     while True:
         motion = motions[random.randint(0,2)]
-        print(motion)
+        # print(motion)
 
         s3 = subprocess.call("exec " + f'flite -voice rms -t "{motion}"', shell = True)
-        time.sleep(2)
+        #time.sleep(2)
         #if os.path.isfile("rm test.txt"):
             #subprocess.call("rm test.txt", shell = True)
         
         try:
-            subprocess.call("../../samples/bin/./BodyReaderPoll ./test.txt", shell = True, timeout = 5)
+            subprocess.call("../../samples/bin/./BodyReaderPoll ./test.txt", shell = True, timeout = 3)
         except:
             print("Data Read in")
         
@@ -52,12 +52,12 @@ def main():
                     trimmeData.append('\n')
             
         #print(trimmeData)
-        f = open("../train_svm/finalData.txt", 'w')
-        for i in trimmeData:
-            if i != '\n':
-                f.write(str(i)+ ' ')
-            else:
-                f.write(str(i))
+        with open("../train_svm/finalData.txt", 'w') as f:
+            for i in trimmeData:
+                if i != '\n':
+                    f.write(str(i)+ ' ')
+                else:
+                    f.write(str(i))
         result = correctMotion("../train_svm/finalData.txt", motion)
         subprocess.call("exec " + f'flite -voice rms -t "{result}"', shell = True)
 # allows for command line usage as exacutable
