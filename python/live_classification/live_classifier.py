@@ -4,18 +4,20 @@
 import pickle
 import sklearn as sk
 import pickle
+import sys
 
 from sklearn import svm
+from liveloader import loadData
 
 # This expects a stream of data from the astra software
 # through a pipe into stdin.
 
 def main():
     # Load pickle (get trained SVM)
-    svm = None
+    model = None
     try:
         with open("./trained.obj", "rb") as pickle_file:
-            svm = pickle.load(pickle_file)
+            model = pickle.load(pickle_file)
     except FileNotFoundError:
         print("No trained SVM found. Please train one!")
         exit(-1)
@@ -25,10 +27,13 @@ def main():
 
     # Parse input
     while True:
-        print(input())
+        # collect Data over time period
+        raw = input()
+        print(raw)
 
         # Classify
         print("I don't know atm")
+        #model.predict("berg")
 
 if __name__ == "__main__":
     main()

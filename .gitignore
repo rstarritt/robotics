@@ -126,3 +126,4 @@ dmypy.json
 *.obj
 *.processed
 python/live_classification/astrapull
+CMakeCache.txt
