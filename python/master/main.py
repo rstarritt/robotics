@@ -2,15 +2,24 @@ import sys
 import os, signal
 import subprocess
 import time
-sys.path.insert(0, '../train_svm')
-from motions.py import correctMotion
+import random
+sys.path.append('../train_svm/')
+from motions import correctMotion
 
 def main():
     s=subprocess.call("exec " + "../../flite-2.1-release/bin/./flite -voice rms -t \"would you like to play a game?\"", shell = True)
+    time.sleep(1)
  #   rm=subprocess.call("rm test.txt", shell = True)
  #   s2=subprocess.call("../../samples/bin/./BodyReaderPoll ../../python/master/test.txt", shell = True, timeout = 1)
+
+    motions = ["High V", "Low V", "T"]
+    
+
     while True:
-        s3=subprocess.call("exec " + "../../flite-2.1-release/bin/./flite -voice rms -t \"High V\"", shell = True)
+        motion = motions[random.randint(0,2)]
+        print(motion)
+        s3=subprocess.call("exec " + f'../../flite-2.1-release/bin/./flite -voice rms -t "{motion}"', shell = True)
+        print(s3)
         data = []
         trimmeData = []
         with open("test.txt","r") as f:
@@ -30,7 +39,7 @@ def main():
                 f.write(str(i)+ ' ')
             else:
                 f.write(str(i))
-        result = correctMotion("finalData.txt", "High V")
+        result = correctMotion("finalData.txt", motion)
         if result == False:
             s4=subprocess.call("exec " + "../../flite-2.1-release/bin/./flite -voice rms -t \"Incorrect\"", shell = True)
         else:

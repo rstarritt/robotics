@@ -7,6 +7,8 @@
 # compare averages to hardcoded angles
 # will be called as a function
 
+__name__ = "motions"
+
 def correctMotion(filename, motionname):
     # ((thetaMin, thetaMax),(phiMin,phiMax))
     highVrange = ((0.35, 0.6),(0.2, 0.6))
@@ -17,7 +19,7 @@ def correctMotion(filename, motionname):
     # joint order: head, lhand, rhand, baseSpine
 
     with open(filename) as f:
-        for l, i in f:
+        for l, i in enumerate(f):
             return False
         
 
