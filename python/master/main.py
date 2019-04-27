@@ -9,8 +9,7 @@ from motions import correctMotion
 def main():
     s=subprocess.call("exec " + "../../flite-2.1-release/bin/./flite -voice rms -t \"would you like to play a game?\"", shell = True)
     time.sleep(1)
- #   rm=subprocess.call("rm test.txt", shell = True)
- #   s2=subprocess.call("../../samples/bin/./BodyReaderPoll ../../python/master/test.txt", shell = True, timeout = 1)
+
 
     motions = ["High V", "Low V", "T"]
     
@@ -19,6 +18,8 @@ def main():
         motion = motions[random.randint(0,2)]
         print(motion)
         s3=subprocess.call("exec " + f'../../flite-2.1-release/bin/./flite -voice rms -t "{motion}"', shell = True)
+        rm=subprocess.call("rm test.txt", shell = True)
+        s2=subprocess.call("../../samples/bin/./BodyReaderPoll ../../python/master/test.txt", shell = True, timeout = 1)
         print(s3)
         data = []
         trimmeData = []
