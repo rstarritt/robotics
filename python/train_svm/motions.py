@@ -11,7 +11,7 @@ from math import atan2
 def correctMotion(filename, motionname):
     # ((thetaMin, thetaMax),(phiMin,phiMax))
     highVrange = ((0.35, 0.6),(0.2, 0.6))
-    lowvrange = ((1.3, 1.6),(0.9, 1.4))
+    lowVrange = ((1.3, 1.6),(0.9, 1.4))
     trange = ((0.8, 1.2), (0.2, 0.6))
 
     # file format: x y z x y z ...
