@@ -25,20 +25,18 @@ def main():
         exit(-1)
     
     # Get rid of usb input  warning  
-    print(input())
+    input()
 
     # Parse input
     while True:
         # collect Data over time period
-        timer = time.process_time()
+        timer = time.monotonic()
         data = []
 
-        while time.process_time() - timer < 5: 
+        while time.monotonic() - timer < 1.5: 
             data.append(input())
 
-        print(data)
         data = loadData(data)
-        print(data)
 
         # Classify
         data = convert_data(data)
@@ -50,18 +48,15 @@ def main():
 def convert_data(raw_data):
     data = []
 
-    for folder in raw_data:
-        classification = folder[0]
+    for data_file in raw_data:
+        row = []
+        data_file[1].extend(data_file[2])
+        for x in data_file[1]:
+            for y in x:
+                row.extend([y])
 
-        for data_file in folder[1]:
-            row = []
-            data_file[1].extend(data_file[2])
-            for x in data_file[1]:
-                for y in x:
-                    row.extend([y])
-
-            row.append(classification)
-            data.append(row)
+        row.append(":D")
+        data.append(row)
         
     data = DataFrame(data)
     return data

@@ -12,8 +12,11 @@ def processFolder(data, bin_dist, bin_angle):
 
     results = []
 
-    #print(filename)
     rads = []
+
+    frames = processData(data)
+    for x in frames:
+        rads.extend([Rad(x)])
 
     # histograms for d1
     dist_min = [x * float('inf') for x in range(5)] #[1,2,3,4,5,6,n]
@@ -83,13 +86,15 @@ def processData(data):
     for i in range(len(data)):
         if (len(data) - i) < 18:
             break
-            
+        if int(data[i].split()[1]) != 0:
+            continue
+
         curFrame = []
         curFrame.extend([RawJoint(data[i])])
 
         for _ in range(18):
-            curFrame.extend([RawJoint(data[i])])
             i += 1
+            curFrame.extend([RawJoint(data[i])])
     
         frames.append(curFrame)
 
