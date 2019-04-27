@@ -69,26 +69,6 @@ def correctMotion(filename, motionname):
         if angles[1][1] <= highVrange[1][1]:
             truthTable[7] = True
         # go over truthTable, and append string as required
-        if not truthTable[0]:
-            instructions += "Raise left arm. "
-        if not truthTable[1]:
-            instructions += "Lower left arm. "
-        if not truthTable[2]:
-            instructions += "Raise right arm. "
-        if not truthTable[3]:
-            instructions += "Lower right arm. "
-        if not truthTable[4]:
-            instructions += "Move left arm forwards. "
-        if not truthTable[5]:
-            instructions += "Move left arm back. "
-        if not truthTable[6]:
-            instructions += "Move right arm forwards. "
-        if not truthTable[7]:
-            instructions += "Move right arm back. "
-        # check if instructions is empty. if so, return correct
-        if instructions is "":
-            return "Correct"
-        return instructions
     elif motionname is "Low V":
          # if theta in range and phi in range, return correct, else return fail reason
         # thetaR (angles[0][1]) is negatives
@@ -108,9 +88,7 @@ def correctMotion(filename, motionname):
             truthTable[6] = True
         if angles[1][1] <= lowVrange[1][1]:
             truthTable[7] = True
-        return "Incomplete"
     elif motionname is "T":
-        
         # if theta in range and phi in range, return correct, else return fail reason
         # thetaR (angles[0][1]) is negatives
         if angles[0][0] >= trange[0][0]:
@@ -129,27 +107,27 @@ def correctMotion(filename, motionname):
             truthTable[6] = True
         if angles[1][1] <= trange[1][1]:
             truthTable[7] = True
-        # go over truthTable, and append string as required
-        if not truthTable[0]:
-            instructions += "Raise left arm "
-        if not truthTable[1]:
-            instructions += ""
-        if not truthTable[2]:
-            instructions += ""
-        if not truthTable[3]:
-            instructions += ""
-        if not truthTable[4]:
-            instructions += ""
-        if not truthTable[5]:
-            instructions += ""
-        if not truthTable[6]:
-            instructions += ""
-        if nor truthTable[7]:
-            instructions += ""
-        # check if instructions is empty. if so, return correct
-        if instructions is "":
-            return "Correct"
-        return instructions
+
+    if not truthTable[0]:
+        instructions += "Raise left arm. "
+    if not truthTable[1]:
+        instructions += "Lower left arm. "
+    if not truthTable[2]:
+        instructions += "Raise right arm. "
+    if not truthTable[3]:
+        instructions += "Lower right arm. "
+    if not truthTable[4]:
+        instructions += "Move left arm forwards. "
+    if not truthTable[5]:
+        instructions += "Move left arm back. "
+    if not truthTable[6]:
+        instructions += "Move right arm forwards. "
+    if not truthTable[7]:
+        instructions += "Move right arm back. "
+    # check if instructions is empty. if so, return correct
+    if instructions is "":
+        return "Correct"
+    return instructions
 
 def wellfordsavg(prev, x_n, n):
     return prev + (x_n - prev) / n
