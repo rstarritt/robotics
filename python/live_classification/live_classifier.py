@@ -14,7 +14,7 @@ def main():
     # Load pickle (get trained SVM)
     svm = None
     try:
-        with open("../train_svm/trained.obj", "rb") as pickle_file:
+        with open("./trained.obj", "rb") as pickle_file:
             svm = pickle.load(pickle_file)
     except FileNotFoundError:
         print("No trained SVM found. Please train one!")
