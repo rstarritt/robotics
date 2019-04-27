@@ -120,14 +120,14 @@ void output_joint(const int32_t bodyId, const astra_joint_t* joint, int i, char*
     
    // fp = fopen(filename,"w");
     if(fopen(fileName, "a")){
-        fp = fopen(fileName, "a");
+//        fp = fopen(fileName, "a");
         fprintf(fp, "%i %c %d %c %.1f %c %.1f %c %.1f\n",frameIndex, ' ', i,' ',worldPos->x,' ',worldPos->y,' ', worldPos->z);
     }
     else{
         printf("HELP");
     }
-    fflush(fp);
-    fclose(fp);
+//    fflush(fp);
+//    fclose(fp);
     // orientation is a 3x3 rotation matrix where the column vectors also
     // represent the orthogonal basis vectors for the x, y, and z axes.
 //    const astra_matrix3x3_t* orientation = &joint->orientation;
@@ -156,7 +156,7 @@ void output_hand_poses(const astra_body_t* body)
 //        rightHandPose);
 }
 
-void output_bodies(astra_bodyframe_t bodyFrame, char* fileName, FILE *fp int frameIndex)
+void output_bodies(astra_bodyframe_t bodyFrame, char* fileName, FILE *fp, int frameIndex)
 {
     int i;
     astra_body_list_t bodyList;
@@ -260,6 +260,7 @@ int main(int argc, char* argv[])
         filename = argv[1];
     }
     FILE *fp;
+    fp = fopen(fileName, "a");
     do
     {
         astra_update();
@@ -284,7 +285,8 @@ int main(int argc, char* argv[])
         }
 
     } while (shouldContinue);
-
+    fflush(fp);
+    fclose(fp);
     astra_reader_destroy(&reader);
     astra_streamset_close(&sensor);
 
