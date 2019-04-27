@@ -2,16 +2,15 @@
 # Main entry point for the python code
 import sys
 import os
-#import sklearn as sk
+import sklearn as sk
 import tools_svm
 import pickle
 
 from loader import loadData
 from motions import correctMotion
-#from sklearn import svm
+from sklearn import svm
 
 def main(argv):
-	correctMotion("test.txt", "High V")
     # Check if the appropriate amount of arguments were passed
 
     if len(argv) != 1:

@@ -94,7 +94,10 @@ def processData(data):
 
         for _ in range(18):
             i += 1
-            curFrame.extend([RawJoint(data[i])])
+            try:
+                curFrame.extend([RawJoint(data[i])])
+            except:
+                print(i % 18)
     
         frames.append(curFrame)
 
