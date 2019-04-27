@@ -92,7 +92,46 @@ def correctMotion(filename, motionname):
     elif motionname is "Low V":
         return "Incomplete"
     elif motionname is "T":
-        return "incomplete"
+        
+        # if theta in range and phi in range, return correct, else return fail reason
+        # thetaR (angles[0][1]) is negatives
+        if angles[0][0] >= trange[0][0]:
+            truthTable[0] = True
+        if angles[0][0] <= trange[0][1]:
+            truthTable[1] = True
+        if angles[0][1] <= 0 - trange[0][0]:
+            truthTable[2] = True
+        if angles[0][1] >= 0 - trange[0][1]:
+            truthTable[3] = True
+        if angles[1][0] >= trange[1][0]:
+            truthTable[4] = True
+        if angles[1][0] <= trange[1][1]:
+            truthTable[5] = True
+        if angles[1][1] >= trange[1][0]:
+            truthTable[6] = True
+        if angles[1][1] <= trange[1][1]:
+            truthTable[7] = True
+        # go over truthTable, and append string as required
+        if not truthTable[0]:
+            instructions += "Raise left arm "
+        if not truthTable[1]:
+            instructions += ""
+        if not truthTable[2]:
+            instructions += ""
+        if not truthTable[3]:
+            instructions += ""
+        if not truthTable[4]:
+            instructions += ""
+        if not truthTable[5]:
+            instructions += ""
+        if not truthTable[6]:
+            instructions += ""
+        if nor truthTable[7]:
+            instructions += ""
+        # check if instructions is empty. if so, return correct
+        if instructions is "":
+            return "Correct"
+        return instructions
 
 def wellfordsavg(prev, x_n, n):
     return prev + (x_n - prev) / n
