@@ -550,12 +550,12 @@ clean: c-api/BodyReaderPoll/CMakeFiles/BodyReaderPoll.dir/clean
 # Directory level rules for directory c-api/BodyReaderPollStdOut
 
 # Convenience name for "all" pass in the directory.
-c-api/BodyReaderPollStdOut/all: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/all
+c-api/BodyReaderPollStdOut/all: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/all
 
 .PHONY : c-api/BodyReaderPollStdOut/all
 
 # Convenience name for "clean" pass in the directory.
-c-api/BodyReaderPollStdOut/clean: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/clean
+c-api/BodyReaderPollStdOut/clean: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/clean
 
 .PHONY : c-api/BodyReaderPollStdOut/clean
 
@@ -565,39 +565,39 @@ c-api/BodyReaderPollStdOut/preinstall:
 .PHONY : c-api/BodyReaderPollStdOut/preinstall
 
 #=============================================================================
-# Target rules for target c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir
+# Target rules for target c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir
 
 # All Build rule for target.
-c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/all:
-	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/depend
-	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=3,4 "Built target BodyReaderPollStdOut"
-.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/all
+c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/all:
+	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/depend
+	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=3,4 "Built target BodyReaderPollStd"
+.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/all
 
 # Include target in all.
-all: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/all
+all: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/rule: cmake_check_build_system
+c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/warfield/Code/robotics/samples/CMakeFiles 0
-.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/rule
+.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/rule
 
 # Convenience name for target.
-BodyReaderPollStdOut: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/rule
+BodyReaderPollStd: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/rule
 
-.PHONY : BodyReaderPollStdOut
-
-# clean rule for target.
-c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/clean:
-	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/clean
-.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/clean
+.PHONY : BodyReaderPollStd
 
 # clean rule for target.
-clean: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/clean
+c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/clean:
+	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/clean
+.PHONY : c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/clean
+
+# clean rule for target.
+clean: c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/clean
 
 .PHONY : clean
 

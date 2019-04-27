@@ -215,17 +215,17 @@ BodyReaderPoll/fast:
 .PHONY : BodyReaderPoll/fast
 
 #=============================================================================
-# Target rules for targets named BodyReaderPollStdOut
+# Target rules for targets named BodyReaderPollStd
 
 # Build rule for target.
-BodyReaderPollStdOut: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BodyReaderPollStdOut
-.PHONY : BodyReaderPollStdOut
+BodyReaderPollStd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BodyReaderPollStd
+.PHONY : BodyReaderPollStd
 
 # fast build rule for target.
-BodyReaderPollStdOut/fast:
-	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStdOut.dir/build
-.PHONY : BodyReaderPollStdOut/fast
+BodyReaderPollStd/fast:
+	$(MAKE) -f c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build.make c-api/BodyReaderPollStdOut/CMakeFiles/BodyReaderPollStd.dir/build
+.PHONY : BodyReaderPollStd/fast
 
 #=============================================================================
 # Target rules for targets named DepthReaderEventCPP
@@ -360,7 +360,7 @@ help:
 	@echo "... InfraredReaderPoll"
 	@echo "... InfraredColorReaderEvent"
 	@echo "... BodyReaderPoll"
-	@echo "... BodyReaderPollStdOut"
+	@echo "... BodyReaderPollStd"
 	@echo "... DepthReaderEventCPP"
 	@echo "... ColorReaderEventCPP"
 	@echo "... SimpleDepthViewer-SFML"

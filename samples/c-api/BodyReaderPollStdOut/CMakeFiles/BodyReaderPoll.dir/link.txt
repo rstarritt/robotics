@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/BodyReaderPoll.dir/main.c.o  -o ../../bin/BodyReaderPoll -Wl,-rpath,"\$ORIGIN/../lib:/home/warfield/Code/robotics/lib" /home/warfield/Code/robotics/lib/libastra_core.so /home/warfield/Code/robotics/lib/libastra_core_api.so /home/warfield/Code/robotics/lib/libastra.so -lpthread 
