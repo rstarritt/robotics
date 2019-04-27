@@ -70,21 +70,21 @@ def correctMotion(filename, motionname):
             truthTable[7] = True
         # go over truthTable, and append string as required
         if not truthTable[0]:
-            instructions += "Raise left arm "
+            instructions += "Raise left arm. "
         if not truthTable[1]:
-            instructions += ""
+            instructions += "Lower left arm. "
         if not truthTable[2]:
-            instructions += ""
+            instructions += "Raise right arm. "
         if not truthTable[3]:
-            instructions += ""
+            instructions += "Lower right arm. "
         if not truthTable[4]:
-            instructions += ""
+            instructions += "Move left arm forwards. "
         if not truthTable[5]:
-            instructions += ""
+            instructions += "Move left arm back. "
         if not truthTable[6]:
-            instructions += ""
-        if nor truthTable[7]:
-            instructions += ""
+            instructions += "Move right arm forwards. "
+        if not truthTable[7]:
+            instructions += "Move right arm back. "
         # check if instructions is empty. if so, return correct
         if instructions is "":
             return "Correct"
