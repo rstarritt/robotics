@@ -125,5 +125,9 @@ dmypy.json
 .pyre/
 *.obj
 *.processed
+
 python/live_classification/astrapull
+python/master/finalData.txt
+python/master/rms
+astra.log
 CMakeCache.txt
