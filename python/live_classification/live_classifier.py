@@ -6,6 +6,7 @@ import sklearn as sk
 import pickle
 import sys
 import time
+import subprocess
 
 from sklearn import svm
 from liveloader import loadData
@@ -32,8 +33,9 @@ def main():
         # collect Data over time period
         timer = time.monotonic()
         data = []
+        subprocess.call("exec " + "mpv beep.mp3 &", shell = True)
 
-        while time.monotonic() - timer < 1.5: 
+        while time.monotonic() - timer < 3: 
             data.append(input())
 
         data = loadData(data)
