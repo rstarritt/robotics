@@ -7,6 +7,9 @@ import pickle
 import sys
 import time
 import subprocess
+import random
+from gtts import gTTS
+import os
 
 from sklearn import svm
 from liveloader import loadData
@@ -14,6 +17,10 @@ from pandas import DataFrame
 
 # This expects a stream of data from the astra software
 # through a pipe into stdin.
+
+dances = {'GBB' : ('Go Big Blue', 5), 'csm' : ('C S M', 5), 
+          'defence' : ('defence', 2.5), 'highV' : ('high V', 2), 
+          'lowV' : ('Low V', 2), 't' : ('T', 2)}
 
 def main():
     # Load pickle (get trained SVM)
@@ -24,18 +31,25 @@ def main():
     except FileNotFoundError:
         print("No trained SVM found. Please train one!")
         exit(-1)
-    
+
     # Get rid of usb input  warning  
     input()
+    print(model.classes_)
 
     # Parse input
     while True:
+        # Random dance, move
+        dance = random.choice(model.classes_)
+
+        tts = gTTS(text=dances[dance][0], lang='en')
+        tts.save("good.mp3")
+        subprocess.check_output(["mpv", "good.mp3"])
+
         # collect Data over time period
         timer = time.monotonic()
         data = []
-        subprocess.call("exec " + "mpv beep.mp3 &", shell = True)
 
-        while time.monotonic() - timer < 3: 
+        while time.monotonic() - timer < dances[dance][1]: 
             data.append(input())
 
         data = loadData(data)
@@ -45,7 +59,11 @@ def main():
 
         collist = data.columns.tolist()
 
-        print(model.predict(data[collist[:-1]]))
+        classification = model.predict(data[collist[:-1]])
+
+        print(dances[classification[0]] == dances[dance])
+
+
 
 def convert_data(raw_data):
     data = []
