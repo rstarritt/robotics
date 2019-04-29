@@ -40,10 +40,12 @@ def main():
     while True:
         # Random dance, move
         dance = random.choice(model.classes_)
+        print(dance)
+        print(dances[dance][0])
 
         tts = gTTS(text=dances[dance][0], lang='en')
-        tts.save("good.mp3")
-        subprocess.check_output(["mpv", "good.mp3"])
+        tts.save("dance.mp3")
+        subprocess.check_output(["mpv", "dance.mp3"])
 
         # collect Data over time period
         timer = time.monotonic()
@@ -61,7 +63,16 @@ def main():
 
         classification = model.predict(data[collist[:-1]])
 
-        print(dances[classification[0]] == dances[dance])
+        time.sleep(3)
+
+        if dances[classification[0]] == dances[dance]:
+            tts = gTTS(text="Good", lang='en')
+            tts.save("dance.mp3")
+            subprocess.check_output(["mpv", "dance.mp3"])
+        else:
+            tts = gTTS(text="Bad, Try again", lang='en')
+            tts.save("dance.mp3")
+            subprocess.check_output(["mpv", "dance.mp3"])
 
 
 
