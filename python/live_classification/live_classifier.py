@@ -18,9 +18,9 @@ from pandas import DataFrame
 # This expects a stream of data from the astra software
 # through a pipe into stdin.
 
-dances = {'GBB' : ('Go Big Blue', 5), 'csm' : ('C S M', 5), 
-          'defence' : ('defence', 2.5), 'highV' : ('high V', 2), 
-          'lowV' : ('Low V', 2), 't' : ('T', 2)}
+dances = {'GBB' : ('Go Big Blue', 3.5), 'csm' : ('C S M', 3.5), 
+          'defence' : ('defence', 3.5), 'highV' : ('high V', 1.5), 
+          'lowV' : ('Low V', 1.5), 't' : ('T', 1.5)}
 
 def main():
     # Load pickle (get trained SVM)
@@ -47,6 +47,7 @@ def main():
         tts.save("dance.mp3")
         subprocess.check_output(["mpv", "dance.mp3"])
 
+
         # collect Data over time period
         timer = time.monotonic()
         data = []
@@ -54,7 +55,12 @@ def main():
         while time.monotonic() - timer < dances[dance][1]: 
             data.append(input())
 
-        data = loadData(data)
+        print("HI")
+
+        try:
+            data = loadData(data)
+        except:
+            continue
 
         # Classify
         data = convert_data(data)
@@ -65,12 +71,13 @@ def main():
 
         time.sleep(3)
 
+        print(classification[0])
         if dances[classification[0]] == dances[dance]:
             tts = gTTS(text="Good", lang='en')
             tts.save("dance.mp3")
             subprocess.check_output(["mpv", "dance.mp3"])
         else:
-            tts = gTTS(text="Bad, Try again", lang='en')
+            tts = gTTS(text="Bad", lang='en')
             tts.save("dance.mp3")
             subprocess.check_output(["mpv", "dance.mp3"])
 
