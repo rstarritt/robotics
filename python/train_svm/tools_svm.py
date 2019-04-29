@@ -46,8 +46,8 @@ def train_svm(data):
     collist = data.columns.tolist()
     # you can now select from this list any arbritrary range
 
-    model = svm.SVC(gamma=.1, C=10)
-    model.fit(train[collist[:-1]], train[collist[-1]])
+    #model = svm.SVC(gamma=.1, C=10)
+    #model.fit(train[collist[:-1]], train[collist[-1]])
 
     #print(cross_val_score(model, data[collist[:-1]], data[collist[-1]],cv = 5))
 
@@ -56,7 +56,9 @@ def train_svm(data):
 
     parms = {'C': c_parms, 'gamma': g_parms}
 
-    model = GridSearchCV(svm.SVC(), parms, cv=10)  
+    model = GridSearchCV(svm.SVC(), parms, cv=10)
+
+    # Train or full dataset?
     model.fit(train[collist[:-1]], train[collist[-1]])
   
     print('Training accuracy:', model.best_score_)
