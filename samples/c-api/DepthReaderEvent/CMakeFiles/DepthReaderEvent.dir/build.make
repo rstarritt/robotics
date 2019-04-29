@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
+CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
+CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # Include any dependencies generated for this target.
 include c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/depend.make
@@ -59,16 +59,16 @@ include c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/flags.make
 
 c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/main.c.o: c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/flags.make
 c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/main.c.o: c-api/DepthReaderEvent/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/main.c.o"
-	cd /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/DepthReaderEvent.dir/main.c.o   -c /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/main.c.o"
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/DepthReaderEvent.dir/main.c.o   -c /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent/main.c
 
 c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DepthReaderEvent.dir/main.c.i"
-	cd /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent/main.c > CMakeFiles/DepthReaderEvent.dir/main.c.i
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent/main.c > CMakeFiles/DepthReaderEvent.dir/main.c.i
 
 c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DepthReaderEvent.dir/main.c.s"
-	cd /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent/main.c -o CMakeFiles/DepthReaderEvent.dir/main.c.s
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent/main.c -o CMakeFiles/DepthReaderEvent.dir/main.c.s
 
 # Object files for target DepthReaderEvent
 DepthReaderEvent_OBJECTS = \
@@ -79,12 +79,12 @@ DepthReaderEvent_EXTERNAL_OBJECTS =
 
 bin/DepthReaderEvent: c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/main.c.o
 bin/DepthReaderEvent: c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/build.make
-bin/DepthReaderEvent: /home/warfield/Code/robotics/lib/libastra_core.so
-bin/DepthReaderEvent: /home/warfield/Code/robotics/lib/libastra_core_api.so
-bin/DepthReaderEvent: /home/warfield/Code/robotics/lib/libastra.so
+bin/DepthReaderEvent: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core.so
+bin/DepthReaderEvent: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core_api.so
+bin/DepthReaderEvent: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra.so
 bin/DepthReaderEvent: c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/DepthReaderEvent"
-	cd /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DepthReaderEvent.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/DepthReaderEvent"
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DepthReaderEvent.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/build: bin/DepthReaderEvent
@@ -92,10 +92,10 @@ c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/build: bin/DepthReaderEve
 .PHONY : c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/build
 
 c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/clean:
-	cd /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent && $(CMAKE_COMMAND) -P CMakeFiles/DepthReaderEvent.dir/cmake_clean.cmake
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent && $(CMAKE_COMMAND) -P CMakeFiles/DepthReaderEvent.dir/cmake_clean.cmake
 .PHONY : c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/clean
 
 c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/depend:
-	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent /home/warfield/Code/robotics/samples/c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : c-api/DepthReaderEvent/CMakeFiles/DepthReaderEvent.dir/depend
 

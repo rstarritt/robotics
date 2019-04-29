@@ -1,4 +1,4 @@
-# Install script for directory: /home/warfield/Code/robotics/samples
+# Install script for directory: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/warfield/Code/robotics/samples/c-api/cmake_install.cmake")
-  include("/home/warfield/Code/robotics/samples/cpp-api/cmake_install.cmake")
-  include("/home/warfield/Code/robotics/samples/sfml/cmake_install.cmake")
-  include("/home/warfield/Code/robotics/samples/tools/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/c-api/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/cpp-api/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/cmake_install.cmake")
+  include("/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/tools/cmake_install.cmake")
 
 endif()
 
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/warfield/Code/robotics/samples/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

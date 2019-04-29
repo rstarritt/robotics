@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/warfield/Code/robotics/samples
+CMAKE_SOURCE_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/warfield/Code/robotics/samples
+CMAKE_BINARY_DIR = /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples
 
 # Include any dependencies generated for this target.
 include sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/depend.make
@@ -59,16 +59,16 @@ include sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/flags.
 
 sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.o: sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/flags.make
 sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.o: sfml/MultiSensorViewer-SFML/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.o"
-	cd /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.o -c /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.o"
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.o -c /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML/main.cpp
 
 sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.i"
-	cd /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML/main.cpp > CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.i
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML/main.cpp > CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.i
 
 sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.s"
-	cd /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML/main.cpp -o CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.s
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML/main.cpp -o CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.s
 
 # Object files for target MultiSensorViewer-SFML
 MultiSensorViewer__SFML_OBJECTS = \
@@ -79,15 +79,15 @@ MultiSensorViewer__SFML_EXTERNAL_OBJECTS =
 
 bin/MultiSensorViewer-SFML: sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/main.cpp.o
 bin/MultiSensorViewer-SFML: sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/build.make
-bin/MultiSensorViewer-SFML: /home/warfield/Code/robotics/lib/libastra_core.so
-bin/MultiSensorViewer-SFML: /home/warfield/Code/robotics/lib/libastra_core_api.so
-bin/MultiSensorViewer-SFML: /home/warfield/Code/robotics/lib/libastra.so
-bin/MultiSensorViewer-SFML: /usr/lib64/libsfml-graphics.so
-bin/MultiSensorViewer-SFML: /usr/lib64/libsfml-window.so
-bin/MultiSensorViewer-SFML: /usr/lib64/libsfml-system.so
+bin/MultiSensorViewer-SFML: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core.so
+bin/MultiSensorViewer-SFML: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra_core_api.so
+bin/MultiSensorViewer-SFML: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/lib/libastra.so
+bin/MultiSensorViewer-SFML: /usr/lib/libsfml-graphics.so
+bin/MultiSensorViewer-SFML: /usr/lib/libsfml-window.so
+bin/MultiSensorViewer-SFML: /usr/lib/libsfml-system.so
 bin/MultiSensorViewer-SFML: sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/warfield/Code/robotics/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/MultiSensorViewer-SFML"
-	cd /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MultiSensorViewer-SFML.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/MultiSensorViewer-SFML"
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MultiSensorViewer-SFML.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/build: bin/MultiSensorViewer-SFML
@@ -95,10 +95,10 @@ sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/build: bin/Mul
 .PHONY : sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/build
 
 sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/clean:
-	cd /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML && $(CMAKE_COMMAND) -P CMakeFiles/MultiSensorViewer-SFML.dir/cmake_clean.cmake
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML && $(CMAKE_COMMAND) -P CMakeFiles/MultiSensorViewer-SFML.dir/cmake_clean.cmake
 .PHONY : sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/clean
 
 sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/depend:
-	cd /home/warfield/Code/robotics/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML /home/warfield/Code/robotics/samples /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML /home/warfield/Code/robotics/samples/sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : sfml/MultiSensorViewer-SFML/CMakeFiles/MultiSensorViewer-SFML.dir/depend
 

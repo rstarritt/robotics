@@ -1,4 +1,4 @@
-# Install script for directory: /home/warfield/Code/robotics/samples/sfml/MaskedColorViewer-SFML
+# Install script for directory: /home/rstarritt/Documents/CSCI473/AstraSDK-v2.0.15-232757cc1d-20190327T080423Z-Linux/samples/sfml/MaskedColorViewer-SFML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
