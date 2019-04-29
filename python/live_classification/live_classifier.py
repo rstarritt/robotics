@@ -81,8 +81,6 @@ def main():
             tts.save("dance.mp3")
             subprocess.check_output(["mpv", "dance.mp3"])
 
-
-
 def convert_data(raw_data):
     data = []
 
