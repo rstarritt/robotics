@@ -58,15 +58,12 @@ def train_svm(data):
 
     model = GridSearchCV(svm.SVC(), parms, cv=10)  
     model.fit(train[collist[:-1]], train[collist[-1]])
-    gss = model.score(test[collist[:-1]], test[collist[-1]])
-    print(f"Gridsearch score: {gss}")
-
-    # Test
-    score = model.score(test[collist[:-1]], test[collist[-1]])
-    print(f"model score: {score}")
+  
+    print('Training accuracy:', model.best_score_)
+    print('Best parameters:', model.best_params_)
 
     #confusion matrix
-    print("Confusion Matrix")
+    print("\nConfusion Matrix")
     print(confusion_matrix(test[collist[-1]], model.predict(test[collist[:-1]])))
 
     #classification report
