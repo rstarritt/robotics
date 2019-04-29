@@ -1,10 +1,8 @@
 How to use
 ==========
-
-1. Goto the train_svm directory
-#. Run ``./main.py data``
-#. Then goto live_classification
-#. ``./cbin | ./main.py``
+1. run ``pipenv shell``
+#. Goto the live_classification directory
+#. Run ``./run.sh``
 
 What Everything Is
 ==================
@@ -25,7 +23,7 @@ live_classification
 -------------------
 
 The Python script that processes the live data from the astra
-sensor lives here.
+sensor lives here. It uses the trained SVM to classify movements
 
 examples
 --------
@@ -38,5 +36,7 @@ Dependencies
 ============
 - Python >= 3.7
 - Scikit Learn
+- SciPy
 - Pandas
 - Numpy
+- gTTS
