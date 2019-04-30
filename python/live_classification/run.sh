@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-
-DANCE = $1
-
 # Check if svm is trained
 if [ -f ./trained.obj ]; then
     echo "Trained SVM exists"
@@ -21,4 +18,4 @@ else
     cd ../python/live_classification && cp ../../samples/bin/BodyReaderPollStdOut astrapull
 fi
 
-./astrapull | python3 live_classifier.py $DANCE
+./astrapull | python3 live_classifier.py

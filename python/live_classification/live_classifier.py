@@ -7,6 +7,9 @@ import pickle
 import sys
 import time
 import subprocess
+import random
+from gtts import gTTS
+import os
 
 from sklearn import svm
 from liveloader import loadData
@@ -14,6 +17,10 @@ from pandas import DataFrame
 
 # This expects a stream of data from the astra software
 # through a pipe into stdin.
+
+dances = {'GBB' : ('Go Big Blue', 3.5), 'csm' : ('C S M', 3.5), 
+          'defence' : ('defence', 3.5), 'highV' : ('high V', 1.5), 
+          'lowV' : ('Low V', 1.5), 't' : ('T', 1.5)}
 
 def main():
     # Load pickle (get trained SVM)
@@ -24,28 +31,55 @@ def main():
     except FileNotFoundError:
         print("No trained SVM found. Please train one!")
         exit(-1)
-    
+
     # Get rid of usb input  warning  
     input()
+    print(model.classes_)
 
     # Parse input
     while True:
+        # Random dance, move
+        dance = random.choice(model.classes_)
+        print(dance)
+        print(dances[dance][0])
+
+        tts = gTTS(text=dances[dance][0], lang='en')
+        tts.save("dance.mp3")
+        subprocess.check_output(["mpv", "dance.mp3"])
+        subprocess.check_output(["mpv", "beep.mp3"])
+
+
         # collect Data over time period
         timer = time.monotonic()
         data = []
-        subprocess.call("exec " + "mpv beep.mp3 &", shell = True)
 
-        while time.monotonic() - timer < 3: 
+        while time.monotonic() - timer < dances[dance][1]: 
             data.append(input())
 
-        data = loadData(data)
+        try:
+            data = loadData(data)
+        except:
+            continue
+
+        
+        print("HI")
 
         # Classify
         data = convert_data(data)
 
         collist = data.columns.tolist()
 
-        print(model.predict(data[collist[:-1]]))
+        classification = model.predict(data[collist[:-1]])
+
+        print(classification[0])
+        if dances[classification[0]] == dances[dance]:
+            tts = gTTS(text="Good", lang='en')
+            tts.save("dance.mp3")
+            subprocess.check_output(["mpv", "dance.mp3"])
+        else:
+            tts = gTTS(text="Bad", lang='en')
+            tts.save("dance.mp3")
+            subprocess.check_output(["mpv", "dance.mp3"])
 
 def convert_data(raw_data):
     data = []

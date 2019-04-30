@@ -46,31 +46,26 @@ def train_svm(data):
     collist = data.columns.tolist()
     # you can now select from this list any arbritrary range
 
-    model = svm.SVC(gamma=.1, C=10)
-    model.fit(train[collist[:-1]], train[collist[-1]])
+    #model = svm.SVC(gamma=.1, C=10)
+    #model.fit(train[collist[:-1]], train[collist[-1]])
 
-    tuned_parameters = [{'kernel': ['rbf'], 'gamma': [1e-3, 1e-4, 1e-5, 1e-6, 1e-7, 1e-8],
-                     'C': [1, 10, 100, 1000]}]
+    #print(cross_val_score(model, data[collist[:-1]], data[collist[-1]],cv = 5))
 
-    scores = ['f1-score', 'recall']
+    c_parms = [0.1, 0.25, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]
+    g_parms = [0.001, 0.01, 0.1, 1]
 
-    for score in scores:
-        print("# Tuning hyper-parameters for %s" % score)
-        print()
+    parms = {'C': c_parms, 'gamma': g_parms}
 
-        clf = GridSearchCV(svm.SVC(C=1), tuned_parameters, cv=5)
-        clf.fit(data[collist[:-1]], data[collist[-1]])
+    model = GridSearchCV(svm.SVC(), parms, cv=10)
 
-        print("Best parameters set found on development set:")
-        print()
-        print(clf.best_params_)
-
-    # Test
-    score = model.score(test[collist[:-1]], test[collist[-1]])
-    print(f"model score: {score}")
+    # Train or full dataset?
+    model.fit(data[collist[:-1]], data[collist[-1]])
+  
+    print('Training accuracy:', model.best_score_)
+    print('Best parameters:', model.best_params_)
 
     #confusion matrix
-    print("Confusion Matrix")
+    print("\nConfusion Matrix")
     print(confusion_matrix(test[collist[-1]], model.predict(test[collist[:-1]])))
 
     #classification report
