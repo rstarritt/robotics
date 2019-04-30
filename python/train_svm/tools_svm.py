@@ -59,7 +59,7 @@ def train_svm(data):
     model = GridSearchCV(svm.SVC(), parms, cv=10)
 
     # Train or full dataset?
-    model.fit(train[collist[:-1]], train[collist[-1]])
+    model.fit(data[collist[:-1]], data[collist[-1]])
   
     print('Training accuracy:', model.best_score_)
     print('Best parameters:', model.best_params_)

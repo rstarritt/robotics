@@ -46,6 +46,7 @@ def main():
         tts = gTTS(text=dances[dance][0], lang='en')
         tts.save("dance.mp3")
         subprocess.check_output(["mpv", "dance.mp3"])
+        subprocess.check_output(["mpv", "beep.mp3"])
 
 
         # collect Data over time period
@@ -55,12 +56,13 @@ def main():
         while time.monotonic() - timer < dances[dance][1]: 
             data.append(input())
 
-        print("HI")
-
         try:
             data = loadData(data)
         except:
             continue
+
+        
+        print("HI")
 
         # Classify
         data = convert_data(data)
@@ -68,8 +70,6 @@ def main():
         collist = data.columns.tolist()
 
         classification = model.predict(data[collist[:-1]])
-
-        time.sleep(3)
 
         print(classification[0])
         if dances[classification[0]] == dances[dance]:
