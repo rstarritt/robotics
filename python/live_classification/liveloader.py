@@ -160,9 +160,9 @@ class Rad:
         star = {
             0  : self.head,
             4  : self.left_hand,
-            12 : self.left_foot,
+            11 : self.left_foot,
             7  : self.right_hand,
-            15 : self.right_foot,
+            14 : self.right_foot,
             9  : self.hip
         }
 
