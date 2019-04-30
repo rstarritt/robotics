@@ -4,12 +4,9 @@ How to use
 #. Run ``cd install; sudo ./install.sh``
 #. Add the specified lines to your bashrc
 #. Go back to root directory
-#. Run ``cd samples; cmake . && make``
-#. Go back to root directory
 #. Run ``cd python; pipenv shell``
 #. Run ``pipenv sync``
-#. Goto the live_classification directory
-#. Run ``./run.sh``
+#. Run ``cd live_classification; ./run.sh``
 
 What Everything Is
 ==================
@@ -19,7 +16,7 @@ python/train_svm
 
 This is the folder where our training data and scripts live.
 the SVM training scripts must be run **BEFORE** runting the live
-scripts.
+scripts. This is done automatically in the run.sh script.
 
 Data file structure:
 
